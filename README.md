@@ -77,7 +77,7 @@ When using the LDA model, "child," "time," and "visit" were identified as signif
 
 ![image8](https://github.com/LEEJAEYONG-97/portfolio/blob/5f895857ba9189f1b1c950e016cf4d3267e19425/app/static/assets/img/%EC%A7%80%EB%8F%84.png)
 
-# Web
+# WebService
 ![image10](https://github.com/LEEJAEYONG-97/portfolio/blob/5f895857ba9189f1b1c950e016cf4d3267e19425/app/static/assets/img/%EC%9B%B9%EA%B5%AC%ED%98%84.png)
 ![image11](https://github.com/LEEJAEYONG-97/portfolio/blob/5f895857ba9189f1b1c950e016cf4d3267e19425/app/static/assets/img/%EC%9B%B9%EA%B5%AC%ED%98%843.png)
 ![image12](https://github.com/LEEJAEYONG-97/portfolio/blob/5f895857ba9189f1b1c950e016cf4d3267e19425/app/static/assets/img/%EC%9B%B9%EA%B5%AC%ED%98%844.png)
