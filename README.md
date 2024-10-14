@@ -13,7 +13,7 @@ Tools:
 * BeautifulSoup: A Python library used to extract data from HTML and XML documents.
 * Selenium: A tool for automating web browsers to collect data from dynamic web pages.
 * Refinement and Normalization: Used with Selenium to automate the Google Chrome browser.
-
+![image](https://github.com/LEEJAEYONG-97/portfolio/blob/dd2d2a56ddce3457097b49afaefd827964df412d/app/static/assets/img/%EB%A6%AC%EB%B7%B0%20%EC%BA%A1%EC%B2%982.png)
 ![image alt](https://github.com/LEEJAEYONG-97/portfolio/blob/4642150dc6cb18c07a6c9122f0f9038236b52657/app/static/assets/img/%EB%A6%AC%EB%B7%B0%20%EC%BA%A1%EC%B2%98.png)
 
 
