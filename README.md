@@ -7,7 +7,9 @@ What are the elements that visitors rate most positively?
 Naver Place Reviews,
 
 * Data Types: Text reviews, number of visits, visit dates, author information, tourist attractions, operating hours, ratings, location, daily visitor count
+
 Tools:
+
 * BeautifulSoup: A Python library used to extract data from HTML and XML documents.
 * Selenium: A tool for automating web browsers to collect data from dynamic web pages.
 * Chrome WebDriver: Used with Selenium to automate the Google Chrome browser.
