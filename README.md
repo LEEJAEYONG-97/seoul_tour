@@ -14,7 +14,7 @@ Tools:
 * Selenium: A tool for automating web browsers to collect data from dynamic web pages.
 * Chrome WebDriver: Used with Selenium to automate the Google Chrome browser.
 
-![gui](https://github.com/kochlisGit/ProphitBet-Soccer-Bets-Predictor/blob/main/screenshots/loaded_league.png)
+![gui](https://github.com/LEEJAEYONG-97/portfolio.git/app/static/assets/img/리뷰 캡처.png)
 
 # League Statistics
 
