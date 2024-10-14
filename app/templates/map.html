@@ -1,0 +1,1854 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2d0d2baf80938a29c4dcd0e0d052778a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2d0d2baf80938a29c4dcd0e0d052778a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2d0d2baf80938a29c4dcd0e0d052778a = L.map(
+                "map_2d0d2baf80938a29c4dcd0e0d052778a",
+                {
+                    center: [37.5665, 126.978],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_93e10883bd0ce9d777d47a7e43def3ad = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_93e10883bd0ce9d777d47a7e43def3ad.addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var marker_5b576a04804a7244ec413de937adf30a = L.marker(
+                [37.579617, 126.974847],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_365839a73ee3d6b83e8e7084936f3c55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5b576a04804a7244ec413de937adf30a.setIcon(icon_365839a73ee3d6b83e8e7084936f3c55);
+        
+    
+        var popup_a0c7212f96640e48371f117a914d0d31 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_1561121e673b2f183a2ac2e508afe34f = $(`<div id="html_1561121e673b2f183a2ac2e508afe34f" style="width: 100.0%; height: 100.0%;">경복궁<br>Function: 고궁<br>Details: 서울특별시에 있는 조선시대의 궁궐 중 하나이며, 조선의 정궁이기도 하다. 사적 제117호로 지정되어 있다. 서울특별시 종로구 사직로 161소재. 조선의 법궁이다.</div>`)[0];
+                popup_a0c7212f96640e48371f117a914d0d31.setContent(html_1561121e673b2f183a2ac2e508afe34f);
+            
+        
+
+        marker_5b576a04804a7244ec413de937adf30a.bindPopup(popup_a0c7212f96640e48371f117a914d0d31)
+        ;
+
+        
+    
+    
+            var marker_64fb8ed1666883cb496fd449d44c0a9c = L.marker(
+                [37.5792907, 126.9888087],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_128421b86c8e50865e1c0eeeed1cee13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_64fb8ed1666883cb496fd449d44c0a9c.setIcon(icon_128421b86c8e50865e1c0eeeed1cee13);
+        
+    
+        var popup_381ac66ef0f8e6122c367cb2566d1c83 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_bf90d2e32184dda78a53bd922ec60db2 = $(`<div id="html_bf90d2e32184dda78a53bd922ec60db2" style="width: 100.0%; height: 100.0%;">창덕궁<br>Function: 고궁<br>Details: 서울특별시에 있는 조선 - 대한제국시대 궁궐 중 하나. 1997년 유네스코 세계유산으로 등재되었다.</div>`)[0];
+                popup_381ac66ef0f8e6122c367cb2566d1c83.setContent(html_bf90d2e32184dda78a53bd922ec60db2);
+            
+        
+
+        marker_64fb8ed1666883cb496fd449d44c0a9c.bindPopup(popup_381ac66ef0f8e6122c367cb2566d1c83)
+        ;
+
+        
+    
+    
+            var marker_9c1eeace02f39fe28a0297c66f9eaf70 = L.marker(
+                [37.5824075, 126.9814591],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_6dbc933c478fabf1cc9b88ccd4b808a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9c1eeace02f39fe28a0297c66f9eaf70.setIcon(icon_6dbc933c478fabf1cc9b88ccd4b808a3);
+        
+    
+        var popup_30e490ce00b1cee1e7eb2a17ec6157ff = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_79e494b5a8c75ea5fd3d0ffb481fa73e = $(`<div id="html_79e494b5a8c75ea5fd3d0ffb481fa73e" style="width: 100.0%; height: 100.0%;">북촌 한옥마을<br>Function: 문화유산보존지역<br>Details: 서울특별시 종로구 가회동, 삼청동 내의 한옥 밀집지역을 칭한다.</div>`)[0];
+                popup_30e490ce00b1cee1e7eb2a17ec6157ff.setContent(html_79e494b5a8c75ea5fd3d0ffb481fa73e);
+            
+        
+
+        marker_9c1eeace02f39fe28a0297c66f9eaf70.bindPopup(popup_30e490ce00b1cee1e7eb2a17ec6157ff)
+        ;
+
+        
+    
+    
+            var marker_8addb3b635b21eee468fcb0d33b2b7fb = L.marker(
+                [37.5112808, 127.0969224],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_51e40bd0018cf2fd4ee6c781cd669f87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8addb3b635b21eee468fcb0d33b2b7fb.setIcon(icon_51e40bd0018cf2fd4ee6c781cd669f87);
+        
+    
+        var popup_05e0624d416c589ac2379fd35c75f483 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_97cb1da7e78d194febf69977d0570551 = $(`<div id="html_97cb1da7e78d194febf69977d0570551" style="width: 100.0%; height: 100.0%;">롯데월드<br>Function: 놀이공원<br>Details: 서울특별시 송파구 올림픽로 240(잠실동)에 위치한 건물로, 테마파크, 백화점, 호텔, 면세점, 대형 할인점이 한 곳에 모여 있는 대단위 복합 생활공간(CLT:Complex Life Town)을 표방하고 있다.</div>`)[0];
+                popup_05e0624d416c589ac2379fd35c75f483.setContent(html_97cb1da7e78d194febf69977d0570551);
+            
+        
+
+        marker_8addb3b635b21eee468fcb0d33b2b7fb.bindPopup(popup_05e0624d416c589ac2379fd35c75f483)
+        ;
+
+        
+    
+    
+            var marker_131dbe68d768918f0f6ad56fc216f518 = L.marker(
+                [37.5713521, 127.0224388],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_60420355383cb76d53143c4764413ab5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_131dbe68d768918f0f6ad56fc216f518.setIcon(icon_60420355383cb76d53143c4764413ab5);
+        
+    
+        var popup_00228780bae2d30a024bb796c3180232 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_c8c61ee29989edf56f6cb3428ef97875 = $(`<div id="html_c8c61ee29989edf56f6cb3428ef97875" style="width: 100.0%; height: 100.0%;">청계천<br>Function: 관광지<br>Details: 서울의 한복판인 종로구와 중구와의 경계를 흐르는 하천. 한성(서울)내의 모든 물이 여기에 모여 동쪽으로 흐르다가 왕십리 밖 살곶이다리(현 한양대 서울캠퍼스 인근) 근처에서 중랑천과 합쳐 서쪽으로 흐름을 바꾸어 한강으로 빠진다.</div>`)[0];
+                popup_00228780bae2d30a024bb796c3180232.setContent(html_c8c61ee29989edf56f6cb3428ef97875);
+            
+        
+
+        marker_131dbe68d768918f0f6ad56fc216f518.bindPopup(popup_00228780bae2d30a024bb796c3180232)
+        ;
+
+        
+    
+    
+            var marker_6b3d970bf1a5f4ff596b964ebd295c8c = L.marker(
+                [37.5664117, 126.9701883],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_5b514052b9fd9e6cf4535d40cbe3a89e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6b3d970bf1a5f4ff596b964ebd295c8c.setIcon(icon_5b514052b9fd9e6cf4535d40cbe3a89e);
+        
+    
+        var popup_084021aae6ddb6d78c9862d0ee988a75 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_7c8a54e80d984fc20fbd2737a05e7388 = $(`<div id="html_7c8a54e80d984fc20fbd2737a05e7388" style="width: 100.0%; height: 100.0%;">덕수궁<br>Function: 고궁<br>Details: 서울특별시 중구 세종대로 99(정동 5-1) 서울특별시청 건너편에 있는 조선 시대에 지어진 궁궐.</div>`)[0];
+                popup_084021aae6ddb6d78c9862d0ee988a75.setContent(html_7c8a54e80d984fc20fbd2737a05e7388);
+            
+        
+
+        marker_6b3d970bf1a5f4ff596b964ebd295c8c.bindPopup(popup_084021aae6ddb6d78c9862d0ee988a75)
+        ;
+
+        
+    
+    
+            var marker_55769288082330a15d8960fd468e8c96 = L.marker(
+                [37.5759369, 126.9746217],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_2443a813fd6edb3c1d555b4b692f2807 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_55769288082330a15d8960fd468e8c96.setIcon(icon_2443a813fd6edb3c1d555b4b692f2807);
+        
+    
+        var popup_9e96e3e6d4a861483ccc11a31caf1d29 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_3958b44ec1229094d0e0c6772cddf868 = $(`<div id="html_3958b44ec1229094d0e0c6772cddf868" style="width: 100.0%; height: 100.0%;">광화문<br>Function: 문화유산보존지역<br>Details: 조선 왕조의 정궁인 경복궁의 정문을 가리키는 말. 다만 일반 대중들에겐 정문을 지칭하는 것 외에도 '광화문' 자체가 세종대로, 광화문광장 등을 비롯한 일대를 통칭하는 지명으로 많이 쓰이고 있다. </div>`)[0];
+                popup_9e96e3e6d4a861483ccc11a31caf1d29.setContent(html_3958b44ec1229094d0e0c6772cddf868);
+            
+        
+
+        marker_55769288082330a15d8960fd468e8c96.bindPopup(popup_9e96e3e6d4a861483ccc11a31caf1d29)
+        ;
+
+        
+    
+    
+            var marker_5ff8dc6e8d2339f5e03affc9712cb308 = L.marker(
+                [37.5600716, 126.9741131],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_80c1f39531bc599d6d7b4b438a7fd55a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5ff8dc6e8d2339f5e03affc9712cb308.setIcon(icon_80c1f39531bc599d6d7b4b438a7fd55a);
+        
+    
+        var popup_f8858eca372f7a6b607729c630290207 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_a1ee7f2f64184e329315afe0e2e0420f = $(`<div id="html_a1ee7f2f64184e329315afe0e2e0420f" style="width: 100.0%; height: 100.0%;">숭례문<br>Function: 문화유산보존지역<br>Details: 600년 동안 한양을 둘러싸고 있었던 한양도성의 남쪽에 위치한 문. 현재도 서울시의 중심에 위치하고 있다. 대한민국 국보 1호. 서울의 상징이나 다름 없는 건축물이다.</div>`)[0];
+                popup_f8858eca372f7a6b607729c630290207.setContent(html_a1ee7f2f64184e329315afe0e2e0420f);
+            
+        
+
+        marker_5ff8dc6e8d2339f5e03affc9712cb308.bindPopup(popup_f8858eca372f7a6b607729c630290207)
+        ;
+
+        
+    
+    
+            var marker_0b8f294ee55b9b9ecfdb6f5de0eb784a = L.marker(
+                [37.5791008, 126.9907223],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_2c45c587fdf5283116f1ea453d583461 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0b8f294ee55b9b9ecfdb6f5de0eb784a.setIcon(icon_2c45c587fdf5283116f1ea453d583461);
+        
+    
+        var popup_f9657ddc3929c29367a22837207206d1 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_ba1b959eec4f8ea2d657dea1a88fd711 = $(`<div id="html_ba1b959eec4f8ea2d657dea1a88fd711" style="width: 100.0%; height: 100.0%;">창경궁<br>Function: 고궁<br>Details: 조선 시대의 궁궐 중 하나. 일제강점기 및 해방 후 40여 년 동안 '창경원(昌慶苑)'이라는 이름으로 불렸으나 1986년 궁궐 복원에 따라 창경궁으로 환원되었다. 서울특별시 종로구 와룡동에 있다. 조선 시대에는 창덕궁과 연결되어 동궐로 불리면서 실질적으로 하나의 궁궐 역할을 했다.</div>`)[0];
+                popup_f9657ddc3929c29367a22837207206d1.setContent(html_ba1b959eec4f8ea2d657dea1a88fd711);
+            
+        
+
+        marker_0b8f294ee55b9b9ecfdb6f5de0eb784a.bindPopup(popup_f9657ddc3929c29367a22837207206d1)
+        ;
+
+        
+    
+    
+            var marker_50adf4b94c7396f8c702ef4aeea11a51 = L.marker(
+                [37.574583, 126.991949],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_087d95ac27d3c5f4190ff67c058d94b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_50adf4b94c7396f8c702ef4aeea11a51.setIcon(icon_087d95ac27d3c5f4190ff67c058d94b5);
+        
+    
+        var popup_114e283124cc0b14aaac881891cc189f = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_dbfdcab2940e59020a5f6f2e154dc481 = $(`<div id="html_dbfdcab2940e59020a5f6f2e154dc481" style="width: 100.0%; height: 100.0%;">종묘<br>Function: 문화유산보존지역<br>Details: 조선 시대 역대 왕과 왕비 및 추존된 왕과 왕비의 신주(神主)를 모신 왕실의 유교 사당.  '종묘사직'이란 말에서 알 수 있듯 전제왕조 당시 왕실과 나라를 상징하는 건물 중 하나였다. </div>`)[0];
+                popup_114e283124cc0b14aaac881891cc189f.setContent(html_dbfdcab2940e59020a5f6f2e154dc481);
+            
+        
+
+        marker_50adf4b94c7396f8c702ef4aeea11a51.bindPopup(popup_114e283124cc0b14aaac881891cc189f)
+        ;
+
+        
+    
+    
+            var marker_72299057ed2cc8b27f516b8fd5af17e5 = L.marker(
+                [37.5740339, 126.974581],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_4d7b95c2433166bd78a37d6e5fc73ff5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_72299057ed2cc8b27f516b8fd5af17e5.setIcon(icon_4d7b95c2433166bd78a37d6e5fc73ff5);
+        
+    
+        var popup_a3b022d119de84b4af9966d5d69802c7 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_e97d74a56baf2c575b39662b969c2189 = $(`<div id="html_e97d74a56baf2c575b39662b969c2189" style="width: 100.0%; height: 100.0%;">광화문 광장<br>Function: 대광장<br>Details: 서울특별시 종로구 광화문에서 세종로사거리와 청계광장으로 이어지는 세종로 중앙에 조성된 광장.</div>`)[0];
+                popup_a3b022d119de84b4af9966d5d69802c7.setContent(html_e97d74a56baf2c575b39662b969c2189);
+            
+        
+
+        marker_72299057ed2cc8b27f516b8fd5af17e5.bindPopup(popup_a3b022d119de84b4af9966d5d69802c7)
+        ;
+
+        
+    
+    
+            var marker_dba8083596af06d8c5d82720d5c1619b = L.marker(
+                [37.5667246, 127.0007191],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_8ddbff9ab50726eeb67ecddb0dc077cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dba8083596af06d8c5d82720d5c1619b.setIcon(icon_8ddbff9ab50726eeb67ecddb0dc077cb);
+        
+    
+        var popup_b6641b8ae282c48474837fbd6cd5efae = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_a38038eee0947b3a58a8284b248b4e51 = $(`<div id="html_a38038eee0947b3a58a8284b248b4e51" style="width: 100.0%; height: 100.0%;">흥인지문<br>Function: 문화유산보존지역<br>Details: 보물 제 1호, 서울특별시 종로구 종로6가에 있는 조선시대의 성문.</div>`)[0];
+                popup_b6641b8ae282c48474837fbd6cd5efae.setContent(html_a38038eee0947b3a58a8284b248b4e51);
+            
+        
+
+        marker_dba8083596af06d8c5d82720d5c1619b.bindPopup(popup_b6641b8ae282c48474837fbd6cd5efae)
+        ;
+
+        
+    
+    
+            var marker_041aa2226417301fffdf4f941660daf4 = L.marker(
+                [37.5238506, 126.9782762],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_2eeb4e4a8c0abefb9e36a6f0a8741850 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_041aa2226417301fffdf4f941660daf4.setIcon(icon_2eeb4e4a8c0abefb9e36a6f0a8741850);
+        
+    
+        var popup_990d84e83f601e04458812da8c1745a6 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_6c31bf0a4868adf88ac328385406c7d2 = $(`<div id="html_6c31bf0a4868adf88ac328385406c7d2" style="width: 100.0%; height: 100.0%;">국립중앙박물관<br>Function: 박물관<br>Details: 대한민국 최대 규모의 국립 박물관. 국립중앙박물관은 박물관 일반의 사업 외에 다음 각 호의 업무를 수행한다. - 국내외 문화재의 보존·관리 - 국내외 박물관자료의 체계적인 보존·관리 - 국내 다른 박물관에 대한 지도·지원 및 업무 협조 - 국내 박물관 협력망의 구성 및 운영 - 그 밖에 국가를 대표하는 박물관으로서의 기능 수행에 필요한 업무</div>`)[0];
+                popup_990d84e83f601e04458812da8c1745a6.setContent(html_6c31bf0a4868adf88ac328385406c7d2);
+            
+        
+
+        marker_041aa2226417301fffdf4f941660daf4.bindPopup(popup_990d84e83f601e04458812da8c1745a6)
+        ;
+
+        
+    
+    
+            var marker_d2313fece1f1a052de5dd88326097b74 = L.marker(
+                [37.5366059, 126.9749457],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_a1a55a72687539e488a1107d372e30df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d2313fece1f1a052de5dd88326097b74.setIcon(icon_a1a55a72687539e488a1107d372e30df);
+        
+    
+        var popup_56eb9652bdd5409d8029fe5b43c4c1d0 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_5381dbb6d1f27812c4e31c2b766400f7 = $(`<div id="html_5381dbb6d1f27812c4e31c2b766400f7" style="width: 100.0%; height: 100.0%;">전쟁기념박물관<br>Function: 박물관<br>Details: 전쟁에 관한 사적과 사건을 기념하기 위해 1991년에 착공하여 1994년 6월 개관한 기념관. 연건평 2만 5천 평에 지하 2층, 지상 4층 규모이며, 호국추모실·전쟁역사실·한국전쟁실·해외파병실·국군발전실·대형장비실 등 6개 전시실로 구분되어 있다.</div>`)[0];
+                popup_56eb9652bdd5409d8029fe5b43c4c1d0.setContent(html_5381dbb6d1f27812c4e31c2b766400f7);
+            
+        
+
+        marker_d2313fece1f1a052de5dd88326097b74.bindPopup(popup_56eb9652bdd5409d8029fe5b43c4c1d0)
+        ;
+
+        
+    
+    
+            var marker_9d9189a384f951927d904d1db303d3e4 = L.marker(
+                [37.5483014, 127.0699623],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_a671605e2e44aaf4d43ac84a156067ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9d9189a384f951927d904d1db303d3e4.setIcon(icon_a671605e2e44aaf4d43ac84a156067ab);
+        
+    
+        var popup_495606b86ff52f218d52ebd3e9172deb = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_c3a5e46c77a571f320187c123b6ea9ae = $(`<div id="html_c3a5e46c77a571f320187c123b6ea9ae" style="width: 100.0%; height: 100.0%;">어린이대공원<br>Function: 놀이공원<br>Details: 서울 광진구에 있는 어린이공원. 가족 단위 휴식공간으로, 공원 출입문은 정문, 동문, 서문, 남문, 북문, 후문, 능동문, 회관문, 구의문 등 9개가 있으며, 주요 시설로 동물나라, 놀이동산, 자연나라 등이 있다. </div>`)[0];
+                popup_495606b86ff52f218d52ebd3e9172deb.setContent(html_c3a5e46c77a571f320187c123b6ea9ae);
+            
+        
+
+        marker_9d9189a384f951927d904d1db303d3e4.bindPopup(popup_495606b86ff52f218d52ebd3e9172deb)
+        ;
+
+        
+    
+    
+            var marker_5e2a6d4e51834b52e0100ac8c455c636 = L.marker(
+                [37.5712378, 126.9659748],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_1d65d987f4e766107bdef0c5c9ecd1c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5e2a6d4e51834b52e0100ac8c455c636.setIcon(icon_1d65d987f4e766107bdef0c5c9ecd1c3);
+        
+    
+        var popup_9d055434778f5a5c20c382bb015702f8 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_2a0cc5b87d28e4e2322ccee79984da6e = $(`<div id="html_2a0cc5b87d28e4e2322ccee79984da6e" style="width: 100.0%; height: 100.0%;">경희궁<br>Function: 고궁<br>Details: 조선 후기 동안 정궁인 창덕궁에 이은 제2의 궁궐(이궁)로 양대 궁궐 체제의 한 축을 담당했다. 많은 왕들이 경희궁에서 적지 않은 시간 동안 거처하면서 창덕궁이 지닌 정궁으로서의 기능을 일정 부분 나눠서 수행했다. 조선시대에는 주로 창덕궁+창경궁을 지칭하는 '동궐'에 대비되는 이름인 '서궐'로 불리웠다.</div>`)[0];
+                popup_9d055434778f5a5c20c382bb015702f8.setContent(html_2a0cc5b87d28e4e2322ccee79984da6e);
+            
+        
+
+        marker_5e2a6d4e51834b52e0100ac8c455c636.bindPopup(popup_9d055434778f5a5c20c382bb015702f8)
+        ;
+
+        
+    
+    
+            var marker_d5a4d1cc6bfdfb1e9a04f34d74a2f928 = L.marker(
+                [37.5765793, 126.9729025],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_be5908832f4945863814b2b900991c6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d5a4d1cc6bfdfb1e9a04f34d74a2f928.setIcon(icon_be5908832f4945863814b2b900991c6a);
+        
+    
+        var popup_e3ddf96d3d2fa288ed69136a30762606 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_568fad68b3da6d11632cb2ef81b2243c = $(`<div id="html_568fad68b3da6d11632cb2ef81b2243c" style="width: 100.0%; height: 100.0%;">국립고궁박물관<br>Function: 박물관<br>Details: 조선왕실의 문화재 및 궁중 유물을 전시·관리하고 있으며 궁중유물의 홍보 및 사회교육, 학술도서와 자료의 수집, 출판, 관리 업무도 담당한다. 박물관은 지상2층, 지하1층의 규모(연면적 18,284 ㎡)로 전시실(15개실), 수장고, 보존과학실 등의 시설이 있다. 전시실은 제왕기록실, 국가의례실, 궁궐건축실, 과학문화실, 왕실생활실, 탄생교육실, 왕실문예실, 대한제국실, 궁중회화실, 궁중음악실, 어가의장실, 자격루실 등으로 구성되어 궁중 유물을 전시하고 있다.</div>`)[0];
+                popup_e3ddf96d3d2fa288ed69136a30762606.setContent(html_568fad68b3da6d11632cb2ef81b2243c);
+            
+        
+
+        marker_d5a4d1cc6bfdfb1e9a04f34d74a2f928.bindPopup(popup_e3ddf96d3d2fa288ed69136a30762606)
+        ;
+
+        
+    
+    
+            var marker_925e84205000158a3733fb93766d1e72 = L.marker(
+                [37.5705077, 126.9683159],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_d86370bbb108ff7b470d04c52755b277 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_925e84205000158a3733fb93766d1e72.setIcon(icon_d86370bbb108ff7b470d04c52755b277);
+        
+    
+        var popup_b7376a2a40ca6ca32147497f624fc78f = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_b6c0f1008d9a860131ebe98b8f6e4c21 = $(`<div id="html_b6c0f1008d9a860131ebe98b8f6e4c21" style="width: 100.0%; height: 100.0%;">서울역사박물관<br>Function: 박물관<br>Details: 서울역사박물관은 조선시대부터 현재에 이르기까지의 서울의 역사와 문화를 정리하여 보여주는 서울도시역사박물관입니다. 도시 서울의 역사를 담은 세계에서 유일한 박물관으로 상설전시실, 기획전시실, 기증유물전시실, 교육실, 강당, 뮤지엄샵이 있으며 전통문화체험교실, 아이좋은 박물관 등 대상별 맞춤 교육프로그램과 음악회 등 다양한 문화프로그램을 운영하고 있습니다.</div>`)[0];
+                popup_b7376a2a40ca6ca32147497f624fc78f.setContent(html_b6c0f1008d9a860131ebe98b8f6e4c21);
+            
+        
+
+        marker_925e84205000158a3733fb93766d1e72.bindPopup(popup_b7376a2a40ca6ca32147497f624fc78f)
+        ;
+
+        
+    
+    
+            var marker_e0ebecf8169feaaa84c972dcc691700b = L.marker(
+                [37.538122, 126.996385],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_6ae54788dd4e56389dc135924b8d2d6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e0ebecf8169feaaa84c972dcc691700b.setIcon(icon_6ae54788dd4e56389dc135924b8d2d6f);
+        
+    
+        var popup_7135a1fec0473ef2b0420beda1d2c42d = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_95ede09323262de0390f0db173ff5bba = $(`<div id="html_95ede09323262de0390f0db173ff5bba" style="width: 100.0%; height: 100.0%;">삼성 리움박물관<br>Function: 미술관<br>Details: 1965년 삼성문화재단 설립 이후 소중한 문화 유산을 보전하고 대중에게 알리고자 노력해온 삼성미술관은 2004년 서울 한남동에 미술관 건물을 신축하면서 삼성미술관 Leeum을 개관했습니다. 수준 높은 소장품 전시 및 기획전시 개최 등 그간의 괄목할만한 활동과 성과로 지금 리움은 명실공히 한국을 대표하는 미술관으로 성장하였습니다.</div>`)[0];
+                popup_7135a1fec0473ef2b0420beda1d2c42d.setContent(html_95ede09323262de0390f0db173ff5bba);
+            
+        
+
+        marker_e0ebecf8169feaaa84c972dcc691700b.bindPopup(popup_7135a1fec0473ef2b0420beda1d2c42d)
+        ;
+
+        
+    
+    
+            var marker_0a37604aa817ec165d7c7807dbaecd8b = L.marker(
+                [37.7004617, 126.9981318],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_b84bbe9be55ad3041c0577cc8e1dca99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a37604aa817ec165d7c7807dbaecd8b.setIcon(icon_b84bbe9be55ad3041c0577cc8e1dca99);
+        
+    
+        var popup_ec5b853aab1ec6efa333a2d243fe9774 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_7cd7272594a20b504461b4b27a018767 = $(`<div id="html_7cd7272594a20b504461b4b27a018767" style="width: 100.0%; height: 100.0%;">도봉산<br>Function: 산<br>Details: 서울특별시 도봉구와 경기도 의정부시, 양주시 장흥면에 걸쳐 있는 해발 740m의 산.</div>`)[0];
+                popup_ec5b853aab1ec6efa333a2d243fe9774.setContent(html_7cd7272594a20b504461b4b27a018767);
+            
+        
+
+        marker_0a37604aa817ec165d7c7807dbaecd8b.bindPopup(popup_ec5b853aab1ec6efa333a2d243fe9774)
+        ;
+
+        
+    
+    
+            var marker_a30dd817e835e726a975b7b2f10e7576 = L.marker(
+                [37.5760774, 126.9852092],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_413849cec306970b38bc46078f80cffb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a30dd817e835e726a975b7b2f10e7576.setIcon(icon_413849cec306970b38bc46078f80cffb);
+        
+    
+        var popup_48c3038ec1e24c675a1554e5dd7d1ec8 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_a6b43784a01d104ef733ce94fccbc0cf = $(`<div id="html_a6b43784a01d104ef733ce94fccbc0cf" style="width: 100.0%; height: 100.0%;">운현궁<br>Function: 고궁<br>Details: 서울특별시 종로구에 있는 조선 후기 흥선대원군의 사가.  1977년 11월 22일 사적 제257호로 지정되었다. 흥선대원군의 둘째 아들인 고종(高宗:재위 1863∼1907)이 출생하여 12세에 왕위에 오르기 전까지 성장한 잠저(潛邸)이다. 철종(哲宗:재위 1849∼1863)의 뒤를 이어 고종이 즉위하자 생부(生父) 이하응(李昰應)은 흥선대원군이 되었고, 생모 민씨는 여흥부대부인(驪興府大夫人)의 봉작을 받았다. </div>`)[0];
+                popup_48c3038ec1e24c675a1554e5dd7d1ec8.setContent(html_a6b43784a01d104ef733ce94fccbc0cf);
+            
+        
+
+        marker_a30dd817e835e726a975b7b2f10e7576.bindPopup(popup_48c3038ec1e24c675a1554e5dd7d1ec8)
+        ;
+
+        
+    
+    
+            var marker_011cea604e86146abf21c3b93c394e80 = L.marker(
+                [37.559315, 126.992283],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_ded85ee6a791e8c06709fc42583aae22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_011cea604e86146abf21c3b93c394e80.setIcon(icon_ded85ee6a791e8c06709fc42583aae22);
+        
+    
+        var popup_d5731ebd234e9ecef2df4d60f961c71b = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_d49da6c8874751b1dcd87c3ee9c64a32 = $(`<div id="html_d49da6c8874751b1dcd87c3ee9c64a32" style="width: 100.0%; height: 100.0%;">남산골한옥마을<br>Function: 문화유산보존지역<br>Details: 서울특별시 중구 필동 일대의 한옥이 보존되어 있는 마을.  1989년 남산골의 제모습 찾기 사업에 의해 조성한 마을로 수도방위사령부 부지를 인수하여, 서울특별시 지정 민속자료 한옥 5개 동을 이전 복원하고 전통정원으로 꾸몄다. 1998년 4월 18일에 개관하였다.</div>`)[0];
+                popup_d5731ebd234e9ecef2df4d60f961c71b.setContent(html_d49da6c8874751b1dcd87c3ee9c64a32);
+            
+        
+
+        marker_011cea604e86146abf21c3b93c394e80.bindPopup(popup_d5731ebd234e9ecef2df4d60f961c71b)
+        ;
+
+        
+    
+    
+            var marker_765c624f5b8d7b39145daf8085403303 = L.marker(
+                [37.4429367, 126.9434499],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_bb2c2b182ad07920c579c9fdd8b8f0d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_765c624f5b8d7b39145daf8085403303.setIcon(icon_bb2c2b182ad07920c579c9fdd8b8f0d9);
+        
+    
+        var popup_602491c42cc8bde33a0dd2ceae2b0fc7 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_2693a920e895132d2f9352aa4dbd4adf = $(`<div id="html_2693a920e895132d2f9352aa4dbd4adf" style="width: 100.0%; height: 100.0%;">관악산<br>Function: 산<br>Details: 서울특별시 관악구 신림동과 동작구 사당동, 경기도 안양시, 과천시의 경계에 있는 산이다. 높이는 632 m.</div>`)[0];
+                popup_602491c42cc8bde33a0dd2ceae2b0fc7.setContent(html_2693a920e895132d2f9352aa4dbd4adf);
+            
+        
+
+        marker_765c624f5b8d7b39145daf8085403303.bindPopup(popup_602491c42cc8bde33a0dd2ceae2b0fc7)
+        ;
+
+        
+    
+    
+            var marker_c0308f7ee6218e052f5a9d495d058e71 = L.marker(
+                [37.5131769, 126.897949],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_56322e3dc0237e031540b2638d7af035 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c0308f7ee6218e052f5a9d495d058e71.setIcon(icon_56322e3dc0237e031540b2638d7af035);
+        
+    
+        var popup_657edaed55a3546df2c9f24d1309e335 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_0744978699966c04ea0b9e1ea274b88a = $(`<div id="html_0744978699966c04ea0b9e1ea274b88a" style="width: 100.0%; height: 100.0%;">문례동 예술촌<br>Function: 관광명소<br>Details: 서울특별시 영등포구에 위치한 예술관으로, 문래동 예술촌을 방문하면 예술인들의 갤러리와  작업실 및 다양한 벽화와 조형물들 뿐 아니라 철공소에서 열심히 작업하시는 분들도 볼 수 있다.</div>`)[0];
+                popup_657edaed55a3546df2c9f24d1309e335.setContent(html_0744978699966c04ea0b9e1ea274b88a);
+            
+        
+
+        marker_c0308f7ee6218e052f5a9d495d058e71.bindPopup(popup_657edaed55a3546df2c9f24d1309e335)
+        ;
+
+        
+    
+    
+            var marker_fe510ed69c13018d650343a8e7db91ba = L.marker(
+                [37.5131507, 127.1013039],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_f2aacecb169f062585c4e3a0f3c31408 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fe510ed69c13018d650343a8e7db91ba.setIcon(icon_f2aacecb169f062585c4e3a0f3c31408);
+        
+    
+        var popup_a490958f0047e95a54789fbc93d37911 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_048b3b7eb00f097fe753ddcbf79427e2 = $(`<div id="html_048b3b7eb00f097fe753ddcbf79427e2" style="width: 100.0%; height: 100.0%;">롯데월드타워<br>Function: 관광명소<br>Details: 대한민국에서 가장 높은 마천루. 서울특별시 송파구 신천동 롯데월드몰에 있는 초고층 빌딩으로 국내 최초로 100층을 넘긴 최고층(지상 123층) 건물이자 새로운 랜드마크다.</div>`)[0];
+                popup_a490958f0047e95a54789fbc93d37911.setContent(html_048b3b7eb00f097fe753ddcbf79427e2);
+            
+        
+
+        marker_fe510ed69c13018d650343a8e7db91ba.bindPopup(popup_a490958f0047e95a54789fbc93d37911)
+        ;
+
+        
+    
+    
+            var marker_926aa60799cd39b2d212419e793e11bb = L.marker(
+                [37.5740613, 126.9541663],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_b0eee3ffd4d1288bb3c0b0232b65c0d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_926aa60799cd39b2d212419e793e11bb.setIcon(icon_b0eee3ffd4d1288bb3c0b0232b65c0d3);
+        
+    
+        var popup_e61ac54f4d81b4c0a801a70d3f29a185 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_e1757b402b12220a2a434707b6a6683f = $(`<div id="html_e1757b402b12220a2a434707b6a6683f" style="width: 100.0%; height: 100.0%;">서대문 독립공원<br>Function: 역사적 명소<br>Details: 일제강점기에 의병투쟁, 3·1독립만세운동, 항일투쟁 등으로 투옥되어 옥고를 치르다 순국한 선열들을 기리기 위하여 조성되었다. 이곳의 옥사는 1908년 일제가 침략을 본격화하기 위하여 지은 근대식 감옥으로, 경성감옥이라는 명칭으로 문을 열었는데 항일투사들이 늘어나자 일제가 마포구 공덕동에 새로 감옥을 지어 1912년에 서대문감옥으로 명칭을 바꾸었다. 그후 1923년에는 서대문형무소로, 1946년에는 경성형무소로, 1950년에는 서울형무소로 바뀌었고 1961년에는 서울교도소로 개칭되었다가 1967년 7월에 서울구치소로 바뀌는 등 여러 차례 그 명칭이 바뀌었다.</div>`)[0];
+                popup_e61ac54f4d81b4c0a801a70d3f29a185.setContent(html_e1757b402b12220a2a434707b6a6683f);
+            
+        
+
+        marker_926aa60799cd39b2d212419e793e11bb.bindPopup(popup_e61ac54f4d81b4c0a801a70d3f29a185)
+        ;
+
+        
+    
+    
+            var marker_c3960d8ba32b7d11d7c15dbb22849614 = L.marker(
+                [37.5759115, 126.9344615],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_86fd2e9ca29ca5a4546ce666dd202921 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c3960d8ba32b7d11d7c15dbb22849614.setIcon(icon_86fd2e9ca29ca5a4546ce666dd202921);
+        
+    
+        var popup_506a8adac3fdcd02c78bc8debd3e5d82 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_c1c2b91cd2c51d0e48aacae3332deb35 = $(`<div id="html_c1c2b91cd2c51d0e48aacae3332deb35" style="width: 100.0%; height: 100.0%;">서대문 자연사박물관<br>Function: 박물관<br>Details: 대지면적 1만 174㎡, 연면적 6,959㎡에 지하 1층 지상 3층 규모로, 3개 주제관 및 부속시설로 이루어지며 수장고·교육실·연구실·표본제작실·훈증실·항온항습기실 등 부대시설이 있다. 1층에는 인간과 자연관·기획전시실·카페테리아·뮤지엄숍·시청각실·가상체험실이 자리잡고 있고, 2층에는 생명진화관·자료실, 3층에는 지구환경관·돌마당·나무마당이 있다. 전시물은 역사적인 흐름에 맞추어 시간적·공간적 순서에 따라 입체적인 디오라마(diorama) 형식으로 전시하며, 전시물 외에 동영상을 제공하고 여러 체험프로그램을 개발·운영한다. </div>`)[0];
+                popup_506a8adac3fdcd02c78bc8debd3e5d82.setContent(html_c1c2b91cd2c51d0e48aacae3332deb35);
+            
+        
+
+        marker_c3960d8ba32b7d11d7c15dbb22849614.bindPopup(popup_506a8adac3fdcd02c78bc8debd3e5d82)
+        ;
+
+        
+    
+    
+            var marker_55e43a7031872841a8f365970d66e63a = L.marker(
+                [37.5794091, 126.9628596],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_8c2a580d9d75958ae8f9200fc0ca2aa3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_55e43a7031872841a8f365970d66e63a.setIcon(icon_8c2a580d9d75958ae8f9200fc0ca2aa3);
+        
+    
+        var popup_2c4062769a8bdcd58b8dca4966e10b2a = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_7dd00dc2282fe514e45e2723b379e00f = $(`<div id="html_7dd00dc2282fe514e45e2723b379e00f" style="width: 100.0%; height: 100.0%;">국립현대미술관 서울관<br>Function: 미술관<br>Details: 종로구 소격동에 위치한 국립현대미술관 서울관은 기무사 터와 기타 조선왕조 종친부 부지를 포함에서 크고 아름다우면서도 도심에 위치하게 지었다. 무형의 미술관, 군도형 미술관, 열린 미술관의 세가지 주제로 설계되었다.</div>`)[0];
+                popup_2c4062769a8bdcd58b8dca4966e10b2a.setContent(html_7dd00dc2282fe514e45e2723b379e00f);
+            
+        
+
+        marker_55e43a7031872841a8f365970d66e63a.bindPopup(popup_2c4062769a8bdcd58b8dca4966e10b2a)
+        ;
+
+        
+    
+    
+            var marker_1d9ffde7c3328d3c88e05204c6162270 = L.marker(
+                [37.577459, 126.9558315],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_24637559caf7f3c7719af108bb7e961e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1d9ffde7c3328d3c88e05204c6162270.setIcon(icon_24637559caf7f3c7719af108bb7e961e);
+        
+    
+        var popup_3bc948124240a0d9d9c1e2f3e123496b = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_ff7600e37d46191177e5f4f0dc919acd = $(`<div id="html_ff7600e37d46191177e5f4f0dc919acd" style="width: 100.0%; height: 100.0%;">대림미술관<br>Function: 미술관<br>Details: 종로구 동의동에 위치한 대림미술관은 한국 최초의 사진 전문 미술관으로 출발하여 현재에는 사진뿐만 아니라 디자인을 포함한 다양한 분야의 전시를 소개하며 그 경계를 확장해 나가고 있다.우리 주변에서 쉽게 발견 할 수 있는 사물의 가치를 새롭게 조명함으로써 대중들이 일상 속에서 예술을 즐길 수 있도록 새로운 라이프 스타일을 제안하는 전시 컨텐츠를 연구하고 있다.</div>`)[0];
+                popup_3bc948124240a0d9d9c1e2f3e123496b.setContent(html_ff7600e37d46191177e5f4f0dc919acd);
+            
+        
+
+        marker_1d9ffde7c3328d3c88e05204c6162270.bindPopup(popup_3bc948124240a0d9d9c1e2f3e123496b)
+        ;
+
+        
+    
+    
+            var marker_c929bbf44bb3091d8bff73fc8186445f = L.marker(
+                [37.538122, 126.9810695],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_091eb2680326ed869072ef12e6cf6258 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c929bbf44bb3091d8bff73fc8186445f.setIcon(icon_091eb2680326ed869072ef12e6cf6258);
+        
+    
+        var popup_0f0882024c25788f46d9377d3c0d6688 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_8056b2fe4873cc2309bba6718af2c716 = $(`<div id="html_8056b2fe4873cc2309bba6718af2c716" style="width: 100.0%; height: 100.0%;">삼성리움미술관<br>Function: 미술관<br>Details: 용산구 한남동에 위치한 삼성리움미술관은 삼성문화재단에서 만든 사립 미술관이다. 컬렉션 만큼은 한국 전통 미술과 현대 미술 양 쪽 모두에서 한국 정상급인 미술관임을 부인할 수 없다. 특히 한국 전통 미술에 관해서 리움과 비교될만한 사립 미술관은 간송미술관 정도 밖에 없다.</div>`)[0];
+                popup_0f0882024c25788f46d9377d3c0d6688.setContent(html_8056b2fe4873cc2309bba6718af2c716);
+            
+        
+
+        marker_c929bbf44bb3091d8bff73fc8186445f.bindPopup(popup_0f0882024c25788f46d9377d3c0d6688)
+        ;
+
+        
+    
+    
+            var marker_d50349fb849b3ddf16d03ae3ab5d8616 = L.marker(
+                [37.5371914, 126.9939275],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_72c400a415c21f6efff5d7e5b9aba7df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d50349fb849b3ddf16d03ae3ab5d8616.setIcon(icon_72c400a415c21f6efff5d7e5b9aba7df);
+        
+    
+        var popup_5232c858e2588ad46a4d1728fc6cba59 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_f762c476c79cd13d31b269caafe28c4e = $(`<div id="html_f762c476c79cd13d31b269caafe28c4e" style="width: 100.0%; height: 100.0%;">D Museum<br>Function: 미술관<br>Details: 용산구 한남동에 위치한 D Museum은 전시실 2개의 층으로 구성되어 있다. 전시실 이외에는 국내외 아티스트의 콜라보레이션 상품을 소개하는 뮤지엄샵, 미술관내 전용 카페인 'D카페', 200명 이상을 수용할 수 있는 4층의 다목적홀 스튜디오, 지하주차장으로 구성되어 있다.</div>`)[0];
+                popup_5232c858e2588ad46a4d1728fc6cba59.setContent(html_f762c476c79cd13d31b269caafe28c4e);
+            
+        
+
+        marker_d50349fb849b3ddf16d03ae3ab5d8616.bindPopup(popup_5232c858e2588ad46a4d1728fc6cba59)
+        ;
+
+        
+    
+    
+            var marker_f5af07410e009b77d3f0e7eec468ce47 = L.marker(
+                [37.5166362, 127.1007442],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_769a7dbbf0d81a226589bcf56021b7e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f5af07410e009b77d3f0e7eec468ce47.setIcon(icon_769a7dbbf0d81a226589bcf56021b7e8);
+        
+    
+        var popup_dc55dd047bf67338dd878550e395ee43 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_db8bc4725a96cbb3dd03581dc16e0eb0 = $(`<div id="html_db8bc4725a96cbb3dd03581dc16e0eb0" style="width: 100.0%; height: 100.0%;">소마미술관<br>Function: 미술관<br>Details: 송파구 방이동에 위치한 소마미술관은 국민체육진흥공단이 국민의 예술적 정서함양을 위하여 2004년 9월 개관한 대중지향적 문화예술공간이다. 2006년 국내 최초로 소마드로잉센터를 개관하여 드로잉 분야에 있어 독창적인 색깔을 추구하고 있다.</div>`)[0];
+                popup_dc55dd047bf67338dd878550e395ee43.setContent(html_db8bc4725a96cbb3dd03581dc16e0eb0);
+            
+        
+
+        marker_f5af07410e009b77d3f0e7eec468ce47.bindPopup(popup_dc55dd047bf67338dd878550e395ee43)
+        ;
+
+        
+    
+    
+            var marker_3305849c4cce6881dc62262caf00b10b = L.marker(
+                [37.5658959, 126.9561827],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_659c74bfa9ecbb784688fd39b4ce00a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3305849c4cce6881dc62262caf00b10b.setIcon(icon_659c74bfa9ecbb784688fd39b4ce00a8);
+        
+    
+        var popup_2be364f8a35a9421cb451e7cc4c03c9f = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_2ff5ca287f617e9591c4c9cbc3f96c9e = $(`<div id="html_2ff5ca287f617e9591c4c9cbc3f96c9e" style="width: 100.0%; height: 100.0%;">국립현대미술관 덕수궁관<br>Function: 미술관<br>Details: 중구 세종대로에 위치한 국립현대미술관 덕수궁관은 1998년 덕수궁 내 분관으로 개관하였다.석조전의 동관과 서관으로 둘러싸인 직각의 공간 안에는 청동 분수대를 갖춘 정원이 자리한다. 우리나라 최초의 서양식 정원으로 지금도 분수대로서의 역할을 다하고 있다.</div>`)[0];
+                popup_2be364f8a35a9421cb451e7cc4c03c9f.setContent(html_2ff5ca287f617e9591c4c9cbc3f96c9e);
+            
+        
+
+        marker_3305849c4cce6881dc62262caf00b10b.bindPopup(popup_2be364f8a35a9421cb451e7cc4c03c9f)
+        ;
+
+        
+    
+    
+            var marker_a2221d40e241bd1188cdb3392dba3cc8 = L.marker(
+                [37.5640253, 126.9562698],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_5de7d4deb76e1e11100300950d4b58fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a2221d40e241bd1188cdb3392dba3cc8.setIcon(icon_5de7d4deb76e1e11100300950d4b58fd);
+        
+    
+        var popup_ed810514e65a76162ce7168e9c653ee4 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_87d96d74560df0b0b91b0d9a1078549f = $(`<div id="html_87d96d74560df0b0b91b0d9a1078549f" style="width: 100.0%; height: 100.0%;">서울시립미술관 서소문본관<br>Function: 미술관<br>Details: 중구 서소문동에 위치한 서울시립미술관 서소문 본관은 르네상스 양식과 현대식 건물의 결합으로 미술관 건물 자체의 건축미가 두드러진다. 샤갈, 피카소, 마티스, 마그리트, 고흐 등 미술에 문외한인 사람도 익히 알 만한 세계 유명 화가들의 전시회는 물론 국제미디어아트비엔날레, 미술관 봄나들이전 등 특색 있는 기획 전시를 선보인다.</div>`)[0];
+                popup_ed810514e65a76162ce7168e9c653ee4.setContent(html_87d96d74560df0b0b91b0d9a1078549f);
+            
+        
+
+        marker_a2221d40e241bd1188cdb3392dba3cc8.bindPopup(popup_ed810514e65a76162ce7168e9c653ee4)
+        ;
+
+        
+    
+    
+            var marker_870f67e5a972cecca6a8c2fc6ed0cabc = L.marker(
+                [37.5804502, 126.9856794],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_fac655551074122fe04772b4f61bf582 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_870f67e5a972cecca6a8c2fc6ed0cabc.setIcon(icon_fac655551074122fe04772b4f61bf582);
+        
+    
+        var popup_100043aad4f59271b0f0912c5ddfdf1d = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_43f36bc8835d7458181cc56fa4784c96 = $(`<div id="html_43f36bc8835d7458181cc56fa4784c96" style="width: 100.0%; height: 100.0%;">아르코미술관<br>Function: 미술관<br>Details: 종로구 이화동에 위차한 아크로미술관은 한국의 동시대 예술작품과 이에 관한 담론의 생산처로서 장르나 매체간의 통섭적 사유를 구현하기 위한 실험적인 기획전과 이를 대중들과 소통할 수 있는 다양한 교육프로그램, 국제교류 네트워크를 활용한 다양한 협업 프로그램을 운영하고 있다.</div>`)[0];
+                popup_100043aad4f59271b0f0912c5ddfdf1d.setContent(html_43f36bc8835d7458181cc56fa4784c96);
+            
+        
+
+        marker_870f67e5a972cecca6a8c2fc6ed0cabc.bindPopup(popup_100043aad4f59271b0f0912c5ddfdf1d)
+        ;
+
+        
+    
+    
+            var marker_137df25d917d848e96da3de333ed2874 = L.marker(
+                [37.5700964, 126.9512047],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_4771e0f1b28a27551312d41290860b00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_137df25d917d848e96da3de333ed2874.setIcon(icon_4771e0f1b28a27551312d41290860b00);
+        
+    
+        var popup_72867e6741e7d7b3c953a19e2d28fbe5 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_95d7c409e953f4adba67830b0359f5df = $(`<div id="html_95d7c409e953f4adba67830b0359f5df" style="width: 100.0%; height: 100.0%;">서울시립미술관 경희궁미술관<br>Function: 미술관<br>Details: 종로구 사직동에 위치한 서울시립미술관의 경희궁분관으로 10미터가 넘는 높은 천장, 내부 구조를 그대로 드러내는 철재 구조물들, 유동적 동선을 보여주는 굴곡진 내부구조와 원형식의 복도 등의 외형적 특징이 인상적이다.</div>`)[0];
+                popup_72867e6741e7d7b3c953a19e2d28fbe5.setContent(html_95d7c409e953f4adba67830b0359f5df);
+            
+        
+
+        marker_137df25d917d848e96da3de333ed2874.bindPopup(popup_72867e6741e7d7b3c953a19e2d28fbe5)
+        ;
+
+        
+    
+    
+            var marker_62b1916c791096a24ebf276de79c74bd = L.marker(
+                [37.5058037, 127.0386377],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_4bcf7f88bcb5279a54e9cdb57136603c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_62b1916c791096a24ebf276de79c74bd.setIcon(icon_4bcf7f88bcb5279a54e9cdb57136603c);
+        
+    
+        var popup_5bd918a93ab0567b76595b5d39479a69 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_1990ea023b5c8c4e319f937af0c933f8 = $(`<div id="html_1990ea023b5c8c4e319f937af0c933f8" style="width: 100.0%; height: 100.0%;">포스코미술관<br>Function: 미술관<br>Details: 강남구 대치동에 위치한 포스코미술관은 1995년 개관한 이래 예술을 매개로 사람과 사람, 사람과 사회간의 자유로운 소통이 가능한 "열린 문화 공간, 문턱 낮은 미술관"을 지향해 오고 있다. 다양한 현대미술 기획전시와 아카데미 프로그램을 통해 "예술 속의 생활, 생활 속의 예술" 실천하고 있다.</div>`)[0];
+                popup_5bd918a93ab0567b76595b5d39479a69.setContent(html_1990ea023b5c8c4e319f937af0c933f8);
+            
+        
+
+        marker_62b1916c791096a24ebf276de79c74bd.bindPopup(popup_5bd918a93ab0567b76595b5d39479a69)
+        ;
+
+        
+    
+    
+            var marker_4293161e236ca1380bf84d0c30a1210a = L.marker(
+                [37.5242737, 127.0215448],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_8964fd1c7cfd26a6f10e6a104d439f6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4293161e236ca1380bf84d0c30a1210a.setIcon(icon_8964fd1c7cfd26a6f10e6a104d439f6a);
+        
+    
+        var popup_8c295ab23fd7ca06e85a500aa3ca07bb = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_1d1882cad5398e99a18b98bd1f4c4570 = $(`<div id="html_1d1882cad5398e99a18b98bd1f4c4570" style="width: 100.0%; height: 100.0%;">K현대미술관<br>Function: 미술관<br>Details: 강남구 압구정동에 위치한 K현대미술관은 세계적인 예술작품을 소장하고 전시하며 관객과 소통하는 현대미술관 이다. 국내 유일의 야간개장 미술관이기도 하며, 몇몇 작품은 만져볼수도 있어서 긴장감도 좀 내려놓고 편하게 관람할 수 있다.</div>`)[0];
+                popup_8c295ab23fd7ca06e85a500aa3ca07bb.setContent(html_1d1882cad5398e99a18b98bd1f4c4570);
+            
+        
+
+        marker_4293161e236ca1380bf84d0c30a1210a.bindPopup(popup_8c295ab23fd7ca06e85a500aa3ca07bb)
+        ;
+
+        
+    
+    
+            var marker_3719204ee75ab1353370b9e88705d90a = L.marker(
+                [37.5936152, 126.9793463],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_7c39fb20a88ac0c0a5400072770fee78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3719204ee75ab1353370b9e88705d90a.setIcon(icon_7c39fb20a88ac0c0a5400072770fee78);
+        
+    
+        var popup_ae1e01be6e4a20907a34aa9fe966af5a = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_d080cf437a78f70dc15c3ec0908c34fa = $(`<div id="html_d080cf437a78f70dc15c3ec0908c34fa" style="width: 100.0%; height: 100.0%;">간송미술관<br>Function: 미술관<br>Details: 송북구 성북동에 위치한 간송미술관은  대한민국 최초의 근대식 사립박물관이다. 1938년 간송 전형필 선생이 설립한 보화각이 전신으로, 1966년 간송미술관과 한국민족미술연구소 체제로 변경되었다. 12점의 국보와 10점의 보물, 그리고 서울특별시 유형문화재 4점 등 수천여점의 문화재를 소장하고 있다.</div>`)[0];
+                popup_ae1e01be6e4a20907a34aa9fe966af5a.setContent(html_d080cf437a78f70dc15c3ec0908c34fa);
+            
+        
+
+        marker_3719204ee75ab1353370b9e88705d90a.bindPopup(popup_ae1e01be6e4a20907a34aa9fe966af5a)
+        ;
+
+        
+    
+    
+            var marker_4f6c6bd4241d89b1be5a9ca101fc47ab = L.marker(
+                [37.5948345, 126.9457404],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_52454134bf8b151ecf6312772dadad19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4f6c6bd4241d89b1be5a9ca101fc47ab.setIcon(icon_52454134bf8b151ecf6312772dadad19);
+        
+    
+        var popup_94e47852b65072a309b81dd09b727e29 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_4d41328ead52c41ebb739a518582a16e = $(`<div id="html_4d41328ead52c41ebb739a518582a16e" style="width: 100.0%; height: 100.0%;">서울미술관<br>Function: 미술관<br>Details: 종로구 부암동에 위치한 서울미술관은 감상자가 창조자가 되는 미술관을 지향한다. 감상자가 미술관과 전문가들의 권위에 눌려 주어진 정보를 수동적으로 수용하는 미술관이 아니라, 스스로 감상의 주체가 되어 창조적으로 감상하는 미술관을 모토로 운영되고 있다.</div>`)[0];
+                popup_94e47852b65072a309b81dd09b727e29.setContent(html_4d41328ead52c41ebb739a518582a16e);
+            
+        
+
+        marker_4f6c6bd4241d89b1be5a9ca101fc47ab.bindPopup(popup_94e47852b65072a309b81dd09b727e29)
+        ;
+
+        
+    
+    
+            var marker_7ba95569f98009729573750251da4bf7 = L.marker(
+                [37.4303743, 127.0020942],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_09b588e00ceb3c7448df28f6bb479e73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7ba95569f98009729573750251da4bf7.setIcon(icon_09b588e00ceb3c7448df28f6bb479e73);
+        
+    
+        var popup_fa21802c8a93d43e1a5f1745c8ce30bf = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_b4831eeb1c61285e4b2c55b8d789f06a = $(`<div id="html_b4831eeb1c61285e4b2c55b8d789f06a" style="width: 100.0%; height: 100.0%;">국립현대미술관<br>Function: 미술관<br>Details: 경기도 과천시 문원동에 위치한 국립현대미술관은 미술작품 및 자료의 수집·보존·전시·조사 및 연구와 이에 관한 국제교류 및 미술활동의 보급을 통한 국민의 미술문화의식 향상에 관한 사무를 관장하고 있다.</div>`)[0];
+                popup_fa21802c8a93d43e1a5f1745c8ce30bf.setContent(html_b4831eeb1c61285e4b2c55b8d789f06a);
+            
+        
+
+        marker_7ba95569f98009729573750251da4bf7.bindPopup(popup_fa21802c8a93d43e1a5f1745c8ce30bf)
+        ;
+
+        
+    
+    
+            var marker_8471303146902f551d1df8d57035d7a6 = L.marker(
+                [37.569784, 126.9601545],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_a6be7b49d37b97df8217b877286f01d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8471303146902f551d1df8d57035d7a6.setIcon(icon_a6be7b49d37b97df8217b877286f01d7);
+        
+    
+        var popup_35dc8d4e9bbdc27a9b9c0dad1682b870 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_15981d83f35c839fb76bb1476c37de6e = $(`<div id="html_15981d83f35c839fb76bb1476c37de6e" style="width: 100.0%; height: 100.0%;">일민미술관<br>Function: 미술관<br>Details: 일민미술관은 종로구 세종로에 위치한 미술관이다. 김상만의 업적을 기리기 위해 설립되었다. 시대와 삶에 새겨진 일상의 미적 가치를 탐구하여 예술과 대중 간의 유기적 소통을 확장의 의도로 운영되고 있다.</div>`)[0];
+                popup_35dc8d4e9bbdc27a9b9c0dad1682b870.setContent(html_15981d83f35c839fb76bb1476c37de6e);
+            
+        
+
+        marker_8471303146902f551d1df8d57035d7a6.bindPopup(popup_35dc8d4e9bbdc27a9b9c0dad1682b870)
+        ;
+
+        
+    
+    
+            var marker_0c068e2922bbd26f8b47f07acada8c91 = L.marker(
+                [37.6406935, 127.0218964],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_1b6ee9f79bcbb9d05312423f33acf637 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0c068e2922bbd26f8b47f07acada8c91.setIcon(icon_1b6ee9f79bcbb9d05312423f33acf637);
+        
+    
+        var popup_3c92030644a1dda23c65d6e473720431 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_e63917c7bc1a215dfea1192e13beddf4 = $(`<div id="html_e63917c7bc1a215dfea1192e13beddf4" style="width: 100.0%; height: 100.0%;">국립현대미술관 창동레지던시<br>Function: 미술관<br>Details: 도봉구 창2동에 위치한 국립현대미술관 창동레지던시는 미술작가들의 창작 여건 활성화와 한국 현대미술의 국제화를 위해 국립현대미술관이 운영하는 레지던시이다.</div>`)[0];
+                popup_3c92030644a1dda23c65d6e473720431.setContent(html_e63917c7bc1a215dfea1192e13beddf4);
+            
+        
+
+        marker_0c068e2922bbd26f8b47f07acada8c91.bindPopup(popup_3c92030644a1dda23c65d6e473720431)
+        ;
+
+        
+    
+    
+            var marker_e6f8dfcb46905f339ddfdfe8afce37a7 = L.marker(
+                [37.516571, 127.0964485],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_6dba520376c3b09442f44356f13fa4a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e6f8dfcb46905f339ddfdfe8afce37a7.setIcon(icon_6dba520376c3b09442f44356f13fa4a6);
+        
+    
+        var popup_866d1a9e822a5824dd870b77f58887b0 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_a27d4208143c93176b3f0d3f9d2b4098 = $(`<div id="html_a27d4208143c93176b3f0d3f9d2b4098" style="width: 100.0%; height: 100.0%;">한미사진미술관<br>Function: 미술관<br>Details: 송파구 방이동에 위치한 한미사진미술관은 2004년 국내 최초로 개관한 사진 전문 미술관이다. 사진에 대한 애정만으로 힘겨운 사진가의 길을 마다하지 않는 작가들의 창작 의욕을 북돋워 작품 활동을 적극 장려할 수 있는 분위기를 형성시키기에 일조하고 있다.</div>`)[0];
+                popup_866d1a9e822a5824dd870b77f58887b0.setContent(html_a27d4208143c93176b3f0d3f9d2b4098);
+            
+        
+
+        marker_e6f8dfcb46905f339ddfdfe8afce37a7.bindPopup(popup_866d1a9e822a5824dd870b77f58887b0)
+        ;
+
+        
+    
+    
+            var marker_690b40afca18a456329e2f9714bf9ff7 = L.marker(
+                [37.5731157, 126.9522548],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_fa1b8d400ee99031da86e641991eb3aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_690b40afca18a456329e2f9714bf9ff7.setIcon(icon_fa1b8d400ee99031da86e641991eb3aa);
+        
+    
+        var popup_954629485d4a7c2000661c5a38f9f5e0 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_1d2d329f770bceefcfa664b1b1f7840d = $(`<div id="html_1d2d329f770bceefcfa664b1b1f7840d" style="width: 100.0%; height: 100.0%;">성곡미술관<br>Function: 미술관<br>Details: 종로구 사직동에 위치한 성곡미술관은  성곡미술문화재단에 운영하고 있다. 소규모의 알찬 전시들이 자주 열리고 특별 전시외에도 조각공원이 꾸며져 있어 둘러보기 좋다.</div>`)[0];
+                popup_954629485d4a7c2000661c5a38f9f5e0.setContent(html_1d2d329f770bceefcfa664b1b1f7840d);
+            
+        
+
+        marker_690b40afca18a456329e2f9714bf9ff7.bindPopup(popup_954629485d4a7c2000661c5a38f9f5e0)
+        ;
+
+        
+    
+    
+            var marker_2c35fd462fdb6a3743e67271204906e2 = L.marker(
+                [37.603604, 127.0324413],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_4a4b1a27e734980648eb7b9c6c5f4bc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2c35fd462fdb6a3743e67271204906e2.setIcon(icon_4a4b1a27e734980648eb7b9c6c5f4bc7);
+        
+    
+        var popup_e58444fccf023df1af5d63eeb2e16832 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_3b0f53dd66a60bbf975ebc0b417846b2 = $(`<div id="html_3b0f53dd66a60bbf975ebc0b417846b2" style="width: 100.0%; height: 100.0%;">성북구립미술관<br>Function: 미술관<br>Details: 성북구 성북동에 위치한 성북구립미술관은 서울시 최초의 자치구 미술관으로 예술적 내향이 깃든 고즈넉한 작품들이 전시되어 있다.</div>`)[0];
+                popup_e58444fccf023df1af5d63eeb2e16832.setContent(html_3b0f53dd66a60bbf975ebc0b417846b2);
+            
+        
+
+        marker_2c35fd462fdb6a3743e67271204906e2.bindPopup(popup_e58444fccf023df1af5d63eeb2e16832)
+        ;
+
+        
+    
+    
+            var marker_67b05d25f3c218bac5dea399fff04d03 = L.marker(
+                [37.4803793, 126.9967367],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_d99709be4f56b3dff81fb1e5b6926c27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_67b05d25f3c218bac5dea399fff04d03.setIcon(icon_d99709be4f56b3dff81fb1e5b6926c27);
+        
+    
+        var popup_fa14dae34a3d66dfbbf4d382d3de7a74 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_d56e26a3657320cecb79ba0b635f13fc = $(`<div id="html_d56e26a3657320cecb79ba0b635f13fc" style="width: 100.0%; height: 100.0%;">예술의전당 한가람미술관<br>Function: 미술관<br>Details: 서초구 서초 3동에 위치한 예술의 전당 내부에 자리잡고 있는 한가람미술관은 본관 전체 3층 중 1층 3개 전시실으로 운영되고 있다. 기획전을 상시 하는 곳으로 유명하다.</div>`)[0];
+                popup_fa14dae34a3d66dfbbf4d382d3de7a74.setContent(html_d56e26a3657320cecb79ba0b635f13fc);
+            
+        
+
+        marker_67b05d25f3c218bac5dea399fff04d03.bindPopup(popup_fa14dae34a3d66dfbbf4d382d3de7a74)
+        ;
+
+        
+    
+    
+            var marker_ab057240542de4d3bef7103076545aa0 = L.marker(
+                [37.549363, 127.0643031],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_50322bb1aae5e6111e4c325cd97830d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ab057240542de4d3bef7103076545aa0.setIcon(icon_50322bb1aae5e6111e4c325cd97830d9);
+        
+    
+        var popup_62224ec39632abd8b7fc1ba284ee8b0b = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_f3d8370c5a5840a7da00dc938187b649 = $(`<div id="html_f3d8370c5a5840a7da00dc938187b649" style="width: 100.0%; height: 100.0%;">유강원(순명효황후의 릉)문화유적<br>Function: 역사적 명소<br>Details: 광진구 능동에 위치한 유강원은 대한제국 순종의 비 순명효황후의 옛 무덤이다. 옛 유강원 터인 광진구 어린이대공원에 남아 있다. 2001년 서울특별시의 유형문화재 제 134호로 지정되었다.</div>`)[0];
+                popup_62224ec39632abd8b7fc1ba284ee8b0b.setContent(html_f3d8370c5a5840a7da00dc938187b649);
+            
+        
+
+        marker_ab057240542de4d3bef7103076545aa0.bindPopup(popup_62224ec39632abd8b7fc1ba284ee8b0b)
+        ;
+
+        
+    
+    
+            var marker_f764919be1a8e01005d6280041caeb5c = L.marker(
+                [37.5360063, 127.0214313],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_893b267456fa50d77f71155210258f59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f764919be1a8e01005d6280041caeb5c.setIcon(icon_893b267456fa50d77f71155210258f59);
+        
+    
+        var popup_7d6ae9e79ca7d6dd8e24bae55e5786b0 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_0e5126edb311fbf636df7ce2014c7f7c = $(`<div id="html_0e5126edb311fbf636df7ce2014c7f7c" style="width: 100.0%; height: 100.0%;">살곶이다리<br>Function: 역사적 명소<br>Details: 성동구 행당1동에 위치한 살곶이다리는  조선의 수도인 한성부와 한반도 남동부를 잇는 주요 교통로에 세워진 다리로 강릉·충주 지방을 연결하는 주요 통로였다. 현존하는 조신 시대 돌다리 중 가장 길다는 특징이 있다.</div>`)[0];
+                popup_7d6ae9e79ca7d6dd8e24bae55e5786b0.setContent(html_0e5126edb311fbf636df7ce2014c7f7c);
+            
+        
+
+        marker_f764919be1a8e01005d6280041caeb5c.bindPopup(popup_7d6ae9e79ca7d6dd8e24bae55e5786b0)
+        ;
+
+        
+    
+    
+            var marker_a282addd9ef467410757e06575a8e61a = L.marker(
+                [37.5544541, 127.0854302],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_4663116d204208a5c30809cd527800e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a282addd9ef467410757e06575a8e61a.setIcon(icon_4663116d204208a5c30809cd527800e6);
+        
+    
+        var popup_125ca0b68228829ea353798b8a6cc989 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_f72e67eb5bcca85d55f8f27c5199ffb0 = $(`<div id="html_f72e67eb5bcca85d55f8f27c5199ffb0" style="width: 100.0%; height: 100.0%;">아차산성<br>Function: 역사적 명소<br>Details: 광진구 광장동 한강 북쪽에 위치하고 있는 아차산성은 사적 제 234호로 지정된 문화재이다. 백제가 하남위례성에 도읍하였을 때 고구려의 침입을 물리치기 위하여 쌓은 큰 성이다.</div>`)[0];
+                popup_125ca0b68228829ea353798b8a6cc989.setContent(html_f72e67eb5bcca85d55f8f27c5199ffb0);
+            
+        
+
+        marker_a282addd9ef467410757e06575a8e61a.bindPopup(popup_125ca0b68228829ea353798b8a6cc989)
+        ;
+
+        
+    
+    
+            var marker_4075686a9182ec020cdfffb65ee49ee4 = L.marker(
+                [37.5759369, 126.9593062],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_baecff0b4d56d6fce9a1afa3665dab99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4075686a9182ec020cdfffb65ee49ee4.setIcon(icon_baecff0b4d56d6fce9a1afa3665dab99);
+        
+    
+        var popup_30cbb60f0135cdcad054dd9fb2322e11 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_015cad046afe730d1be34a7a1cbc7225 = $(`<div id="html_015cad046afe730d1be34a7a1cbc7225" style="width: 100.0%; height: 100.0%;">광화문<br>Function: 역사적 명소<br>Details: 종로구에 위치한 경복궁의 남쪽에 있는 정문이다. 패의 뜻은 '임금의 큰 덕이 온 나라를 비춘다'이다.1395년에 세워졌으며, 2층 누각인 광화문 앞의 양쪽에는 한 쌍의 해치 조각상이 자리잡고 있다. 광화문의 석축부에는 세 개의 홍례문이 있다. 가운데 문은 임금이 다니는 문이고, 나머지 좌우의 문은 신하들이 다니던 문이었다.</div>`)[0];
+                popup_30cbb60f0135cdcad054dd9fb2322e11.setContent(html_015cad046afe730d1be34a7a1cbc7225);
+            
+        
+
+        marker_4075686a9182ec020cdfffb65ee49ee4.bindPopup(popup_30cbb60f0135cdcad054dd9fb2322e11)
+        ;
+
+        
+    
+    
+            var marker_b177a3edb6c25a8e79e0ac574d3ba7d6 = L.marker(
+                [37.5390793, 127.1034372],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_070eec78913a5f0fff3d72559d565c7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b177a3edb6c25a8e79e0ac574d3ba7d6.setIcon(icon_070eec78913a5f0fff3d72559d565c7c);
+        
+    
+        var popup_446b581da09a3e2b64fee30c093d0547 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_1ac53f30631d3096b3f93269f48f8463 = $(`<div id="html_1ac53f30631d3096b3f93269f48f8463" style="width: 100.0%; height: 100.0%;">풍납토성<br>Function: 역사적 명소<br>Details: 광진구 광장동의 산속에 위치한 아차산성은 사적 제 234호로 지정된 문화재이다. 백제가 하남 위례성에 도읍하였을 때 고구려의 침입을 물리치기 위하여 쌓은 큰 성이다.</div>`)[0];
+                popup_446b581da09a3e2b64fee30c093d0547.setContent(html_1ac53f30631d3096b3f93269f48f8463);
+            
+        
+
+        marker_b177a3edb6c25a8e79e0ac574d3ba7d6.bindPopup(popup_446b581da09a3e2b64fee30c093d0547)
+        ;
+
+        
+    
+    
+            var marker_9cded25130379633569a218aa07ea3a7 = L.marker(
+                [37.5575642, 126.9866244],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_9fda4f14f081debcc274d3df16c4d888 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9cded25130379633569a218aa07ea3a7.setIcon(icon_9fda4f14f081debcc274d3df16c4d888);
+        
+    
+        var popup_4acd1affc47e0b4d6ad25c0527356d34 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_2fdf76f4013844db7ad781ca4e6e808c = $(`<div id="html_2fdf76f4013844db7ad781ca4e6e808c" style="width: 100.0%; height: 100.0%;">장충단비<br>Function: 역사적 명소<br>Details: 중구 장충동에 있는 장춘단비는 대한제국 시대에 만들어진 장충단에 서 있던 비석이다. 1969년 서울특별시의 유형문화재 제1호로 지정되었다.</div>`)[0];
+                popup_4acd1affc47e0b4d6ad25c0527356d34.setContent(html_2fdf76f4013844db7ad781ca4e6e808c);
+            
+        
+
+        marker_9cded25130379633569a218aa07ea3a7.bindPopup(popup_4acd1affc47e0b4d6ad25c0527356d34)
+        ;
+
+        
+    
+    
+            var marker_dbdc09178e3b496ec65744e2afa4f611 = L.marker(
+                [37.5599526, 126.9577925],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_ca4c80f237aedd1b08e8fcbef7bc1a51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dbdc09178e3b496ec65744e2afa4f611.setIcon(icon_ca4c80f237aedd1b08e8fcbef7bc1a51);
+        
+    
+        var popup_05d6c6ae73104d453e2ddf5b4a03d4e4 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_6dc2587215f924ac4603972fe9626408 = $(`<div id="html_6dc2587215f924ac4603972fe9626408" style="width: 100.0%; height: 100.0%;">숭례문<br>Function: 역사적 명소<br>Details: 중구에 위치한 숭례문은 남대문이라고 불리기도 한다. 2008년 방화로 인하여 소실된 나쁜 기억이 있지만, 2013년 4월 소실된 숭례문을 원형에 가깝게 복원하였다.</div>`)[0];
+                popup_05d6c6ae73104d453e2ddf5b4a03d4e4.setContent(html_6dc2587215f924ac4603972fe9626408);
+            
+        
+
+        marker_dbdc09178e3b496ec65744e2afa4f611.bindPopup(popup_05d6c6ae73104d453e2ddf5b4a03d4e4)
+        ;
+
+        
+    
+    
+            var marker_51e8f304ae87cdf3a9c84a567f64bc55 = L.marker(
+                [37.486769, 127.0746175],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_f3a7cb19e8c19ee2941d3cea4b907266 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_51e8f304ae87cdf3a9c84a567f64bc55.setIcon(icon_f3a7cb19e8c19ee2941d3cea4b907266);
+        
+    
+        var popup_4be6506133ed91a91d886ea6febbfc8c = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_e59894faa83738b222307898b6fffc06 = $(`<div id="html_e59894faa83738b222307898b6fffc06" style="width: 100.0%; height: 100.0%;">광평대군묘<br>Function: 역사적 명소<br>Details: 강남구 일원동에 위치한 광평대군묘는 세종대왕과 소헌왕후 심씨의 다섯째 아들의 분묘이다.</div>`)[0];
+                popup_4be6506133ed91a91d886ea6febbfc8c.setContent(html_e59894faa83738b222307898b6fffc06);
+            
+        
+
+        marker_51e8f304ae87cdf3a9c84a567f64bc55.bindPopup(popup_4be6506133ed91a91d886ea6febbfc8c)
+        ;
+
+        
+    
+    
+            var marker_861d082efef4aa6dae35cca5be874e37 = L.marker(
+                [37.5711395, 127.0867368],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_fe46151af56e6b7867dde4414abcf8da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_861d082efef4aa6dae35cca5be874e37.setIcon(icon_fe46151af56e6b7867dde4414abcf8da);
+        
+    
+        var popup_1d33e8d21a75c296c616e3a85158a10a = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_ea301be977a4625274f345c9806b76c4 = $(`<div id="html_ea301be977a4625274f345c9806b76c4" style="width: 100.0%; height: 100.0%;">아차산4보루<br>Function: 역사적 명소<br>Details: 광진구, 구리시 중첩에 위치하고 있으며 5세기 중반경 장수왕이 조성한것으로 알려져 있다. 철기제작 및 수리시설이 발견되었으며, 고구려편제 실마리를 제공하는 유적으로도 확인되고 있다.</div>`)[0];
+                popup_1d33e8d21a75c296c616e3a85158a10a.setContent(html_ea301be977a4625274f345c9806b76c4);
+            
+        
+
+        marker_861d082efef4aa6dae35cca5be874e37.bindPopup(popup_1d33e8d21a75c296c616e3a85158a10a)
+        ;
+
+        
+    
+    
+            var marker_663fd26535fdd54213a0a86f7362b28a = L.marker(
+                [37.5858494, 126.9785776],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_7a4d43e4dfb78eaadf545a6756375d86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_663fd26535fdd54213a0a86f7362b28a.setIcon(icon_7a4d43e4dfb78eaadf545a6756375d86);
+        
+    
+        var popup_4031e17abe345cf32a67a2e8e8071609 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_db0a55a756d1d5ef15fa55c8d3011731 = $(`<div id="html_db0a55a756d1d5ef15fa55c8d3011731" style="width: 100.0%; height: 100.0%;">서울문묘<br>Function: 역사적 명소<br>Details: 온돌이 발견되어 한민족 주거문화에 대해서도 알 수 있는 중요유적입니다.</div>`)[0];
+                popup_4031e17abe345cf32a67a2e8e8071609.setContent(html_db0a55a756d1d5ef15fa55c8d3011731);
+            
+        
+
+        marker_663fd26535fdd54213a0a86f7362b28a.bindPopup(popup_4031e17abe345cf32a67a2e8e8071609)
+        ;
+
+        
+    
+    
+            var marker_9c164c5fe6d3620843bba53099995ddd = L.marker(
+                [37.5711389, 126.9920357],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_f35d8083b9c1627055dc63f44fade8e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9c164c5fe6d3620843bba53099995ddd.setIcon(icon_f35d8083b9c1627055dc63f44fade8e5);
+        
+    
+        var popup_becd12f44c58dcb7da57cfdcd2d803fb = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_38407c54638a460f421d44cea0e9c5ba = $(`<div id="html_38407c54638a460f421d44cea0e9c5ba" style="width: 100.0%; height: 100.0%;">동대문<br>Function: 역사적 명소<br>Details: 종로구에 위치한 흥인지문이라고도 불리는 동대문은 한양의 4대문 중의 하나로 대한민국의 보물 제 1호로 지정되어 있다. 도성의 8개 성문 중 유일하게 옹성을 갖추고 있다는 특징이 있다.</div>`)[0];
+                popup_becd12f44c58dcb7da57cfdcd2d803fb.setContent(html_38407c54638a460f421d44cea0e9c5ba);
+            
+        
+
+        marker_9c164c5fe6d3620843bba53099995ddd.bindPopup(popup_becd12f44c58dcb7da57cfdcd2d803fb)
+        ;
+
+        
+    
+    
+            var marker_7debcb9de6970513e787272ee550123c = L.marker(
+                [37.5743555, 126.9651532],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_470fdd587ae73066f168ffe5bbc97557 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7debcb9de6970513e787272ee550123c.setIcon(icon_470fdd587ae73066f168ffe5bbc97557);
+        
+    
+        var popup_878d313c96a91a67651e7f7a7913a1d8 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_4b49496945197a20c80ca9c04d48e9f0 = $(`<div id="html_4b49496945197a20c80ca9c04d48e9f0" style="width: 100.0%; height: 100.0%;">우정총국<br>Function: 역사적 명소<br>Details: 종로구 우정국로에 위치한 우정총국은 조선시대 후기 우체업무를 담당하던 관청으로 한국 역사상 최초의 우체국이라고 할 수 있다. 건물은 사적 제213호로 지정되어 있다.</div>`)[0];
+                popup_878d313c96a91a67651e7f7a7913a1d8.setContent(html_4b49496945197a20c80ca9c04d48e9f0);
+            
+        
+
+        marker_7debcb9de6970513e787272ee550123c.bindPopup(popup_878d313c96a91a67651e7f7a7913a1d8)
+        ;
+
+        
+    
+    
+            var marker_279fd0c63de53644d545ee93cabcb28d = L.marker(
+                [37.5691135, 126.963655],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_c932dbe0ba873d2ae2c0695ac930def5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_279fd0c63de53644d545ee93cabcb28d.setIcon(icon_c932dbe0ba873d2ae2c0695ac930def5);
+        
+    
+        var popup_5dcd03b53270bc97b0a36ac59de0a4e6 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_86c7790b9298d0dddbfb82a93bf01a9c = $(`<div id="html_86c7790b9298d0dddbfb82a93bf01a9c" style="width: 100.0%; height: 100.0%;">광통교<br>Function: 역사적 명소<br>Details: 청계천에 설치되어 있는 다리로 지금의 광교 자리에 있었으며, 육조거리에서 숭례문으로 이어지는 도성 안 중심통로여서 옛 도성에서 가장 많은 사람들이 왕래하던 다리였다고 한다.</div>`)[0];
+                popup_5dcd03b53270bc97b0a36ac59de0a4e6.setContent(html_86c7790b9298d0dddbfb82a93bf01a9c);
+            
+        
+
+        marker_279fd0c63de53644d545ee93cabcb28d.bindPopup(popup_5dcd03b53270bc97b0a36ac59de0a4e6)
+        ;
+
+        
+    
+    
+            var marker_fbf704a6c8d530ff7867b0b7d0e0f935 = L.marker(
+                [37.633944, 127.0332285],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_ebb8097d4947adff93cfe479c52831b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fbf704a6c8d530ff7867b0b7d0e0f935.setIcon(icon_ebb8097d4947adff93cfe479c52831b6);
+        
+    
+        var popup_680ac07574806c087cac0b9e89223769 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_cb8691816249408d544c6a2e51a72fe8 = $(`<div id="html_cb8691816249408d544c6a2e51a72fe8" style="width: 100.0%; height: 100.0%;">월계동각심재<br>Function: 역사적 명소<br>Details: 청계천에 설치되어 있는 다리로 지금의 광교 자리에 있었으며, 육조거리에서 숭례문으로 이어지는 도성 안 중심통로여서 옛 도성에서 가장 많은 사람들이 왕래하던 다리였다고 한다.</div>`)[0];
+                popup_680ac07574806c087cac0b9e89223769.setContent(html_cb8691816249408d544c6a2e51a72fe8);
+            
+        
+
+        marker_fbf704a6c8d530ff7867b0b7d0e0f935.bindPopup(popup_680ac07574806c087cac0b9e89223769)
+        ;
+
+        
+    
+    
+            var marker_675374479b053cee5c75ed9608788ce9 = L.marker(
+                [37.6256571, 127.1156626],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_c3ca3c3c46ee67143cf940019923e00a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_675374479b053cee5c75ed9608788ce9.setIcon(icon_c3ca3c3c46ee67143cf940019923e00a);
+        
+    
+        var popup_25f10335115857692bf16134bf65588d = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_78ccd3dba4f6425b9e9c2529e0f04414 = $(`<div id="html_78ccd3dba4f6425b9e9c2529e0f04414" style="width: 100.0%; height: 100.0%;">목릉<br>Function: 역사적 명소<br>Details: 종로구 경운동에 위치한 월계동 각심재는 1930년대에 지은것으로 보이는 개량한옥으로 경운동에 있던것을 지금의 장소로 옮겨 지었다고 한다.일제시기의 개량한옥의 모습을 잘 나타내고 있으며 주택의 변천사를 알 수 있는 중요한 자료이다.</div>`)[0];
+                popup_25f10335115857692bf16134bf65588d.setContent(html_78ccd3dba4f6425b9e9c2529e0f04414);
+            
+        
+
+        marker_675374479b053cee5c75ed9608788ce9.bindPopup(popup_25f10335115857692bf16134bf65588d)
+        ;
+
+        
+    
+    
+            var marker_c8c6cd9968c5fda43ab97516c9d7b039 = L.marker(
+                [37.5506984, 127.0488321],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_3afba7757c5a8366b3e314281aefcedd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c8c6cd9968c5fda43ab97516c9d7b039.setIcon(icon_3afba7757c5a8366b3e314281aefcedd);
+        
+    
+        var popup_bececb298d9fa511c18f5a97387857c3 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_3ece3fc94a3179721008a1bad344db1e = $(`<div id="html_3ece3fc94a3179721008a1bad344db1e" style="width: 100.0%; height: 100.0%;">서울어린이대공원놀이동산<br>Function: 놀이공원<br>Details: 광진구 능동에 위치한 어린이 대공원 내의 놀이동산으로 어린이 대공원의 취지에 맞추어 유모차 관련 시설이나 수유 시설등이 매우 잘 되어있다.</div>`)[0];
+                popup_bececb298d9fa511c18f5a97387857c3.setContent(html_3ece3fc94a3179721008a1bad344db1e);
+            
+        
+
+        marker_c8c6cd9968c5fda43ab97516c9d7b039.bindPopup(popup_bececb298d9fa511c18f5a97387857c3)
+        ;
+
+        
+    
+    
+            var marker_d96efb009a7c685c92410e91ce0ec00e = L.marker(
+                [37.5482248, 127.0458185],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_9ec48fdf18c645087a5d9cc063ecc3ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d96efb009a7c685c92410e91ce0ec00e.setIcon(icon_9ec48fdf18c645087a5d9cc063ecc3ad);
+        
+    
+        var popup_1318e7b22cb1c122cdcea2fc5eebab54 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_fceebf1148281f17b8bafbb11c991dcc = $(`<div id="html_fceebf1148281f17b8bafbb11c991dcc" style="width: 100.0%; height: 100.0%;">어린이대공원<br>Function: 놀이공원<br>Details: 광진구 능동에 있는 시립 공원으로 현재 서울시설공단에서 운영하고 있다. 개장 당시에는 동양 최대의 규모였다. 푸른 숲과 파란 잔디의 녹지공간으로 이루어져 있어 어린이는 물론 청소년과 일반시민을 위한 휴식 및 문화공간으로서 시민공원의 역할을 한다. 또한 각종 교양시설 및 동물원, 식물원, 놀이시설 등을 갖춘 학습교육장으로 기능하고 있다.</div>`)[0];
+                popup_1318e7b22cb1c122cdcea2fc5eebab54.setContent(html_fceebf1148281f17b8bafbb11c991dcc);
+            
+        
+
+        marker_d96efb009a7c685c92410e91ce0ec00e.bindPopup(popup_1318e7b22cb1c122cdcea2fc5eebab54)
+        ;
+
+        
+    
+    
+            var marker_a382b8293f312453d133fb07ce2f0ff6 = L.marker(
+                [37.5176033, 126.8602701],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_5ce6e26cedc38c42de9bad861416a576 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a382b8293f312453d133fb07ce2f0ff6.setIcon(icon_5ce6e26cedc38c42de9bad861416a576);
+        
+    
+        var popup_7834d8f897ee154bf494685f4b6bcebc = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_27f474575b271f15502fbe90b71f4516 = $(`<div id="html_27f474575b271f15502fbe90b71f4516" style="width: 100.0%; height: 100.0%;">문래공원관리사무소<br>Function: 놀이공원<br>Details: 영등포구 문래동에 위치한 문래공원은 많은 식목들이 심어져 있는 생태공원으로 생태연못, 배드민턴장, 산책로, 야외헬스기구와 같은 야외시설들이 설치되어 있다.</div>`)[0];
+                popup_7834d8f897ee154bf494685f4b6bcebc.setContent(html_27f474575b271f15502fbe90b71f4516);
+            
+        
+
+        marker_a382b8293f312453d133fb07ce2f0ff6.bindPopup(popup_7834d8f897ee154bf494685f4b6bcebc)
+        ;
+
+        
+    
+    
+            var marker_ce70a87b69603e969253a1922324a802 = L.marker(
+                [37.5782, 126.9550913],
+                {}
+            ).addTo(map_2d0d2baf80938a29c4dcd0e0d052778a);
+        
+    
+            var icon_be52ae5110e5a35b6bb685a03a1c1629 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ce70a87b69603e969253a1922324a802.setIcon(icon_be52ae5110e5a35b6bb685a03a1c1629);
+        
+    
+        var popup_f488390da2735d88dc7dcecee4df12e6 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_c80ead157417864688fe5e5c20b52f47 = $(`<div id="html_c80ead157417864688fe5e5c20b52f47" style="width: 100.0%; height: 100.0%;">테지움 서울<br>Function: 놀이공원<br>Details: 종로구 창신 1동에 위치한 테지움 서울은 테디베어 테마파크로 테디베어를 직접 만지고 안아보는 오픈형 이색체험전시 공간이다. 이곳에서 테디베어의 어원과 유래, 역사를 알 수 있다. 서울 테마 존에서는 옛 시절 서울부터 현재 서울까지를 테디베어로 소개하고 있다.</div>`)[0];
+                popup_f488390da2735d88dc7dcecee4df12e6.setContent(html_c80ead157417864688fe5e5c20b52f47);
+            
+        
+
+        marker_ce70a87b69603e969253a1922324a802.bindPopup(popup_f488390da2735d88dc7dcecee4df12e6)
+        ;
+
+        
+    
+</script>
+</html>

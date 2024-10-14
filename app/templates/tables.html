@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Tables - SB Admin</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="static/css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="/">Seoul Tourism Project</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        Authentication
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="login.html">Login</a>
+                                            <a class="nav-link" href="register.html">Register</a>
+                                            <a class="nav-link" href="password.html">Forgot Password</a>
+                                        </nav>
+                                    </div>
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                        Error
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="401.html">401 Page</a>
+                                            <a class="nav-link" href="404.html">404 Page</a>
+                                            <a class="nav-link" href="500.html">500 Page</a>
+                                        </nav>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="sb-sidenav-menu-heading">page</div>
+                            <a class="nav-link" href="/">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Charts
+                            </a>
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Tables
+                            </a>
+                            <a class="nav-link" href="tourist_spots_map.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-map-marked-alt"></i></div>
+                                Tourist Spots Map
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">Tables</h1>
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="static\assets\img\워드 클라우드.png" alt="Description of Image" class="img-fluid rounded">
+                        </div>
+                        
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                서울 관광지 정보
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Function</th>
+                                            <th>Indoor/Outdoors</th>
+                                            <th>Details</th>
+                                            <th>Monday</th>
+                                            <th>Tuesday</th>
+                                            <th>Wednesday</th>
+                                            <th>Thursday</th>
+                                            <th>Friday</th>
+                                            <th>Saturday</th>
+                                            <th>Sunday</th>
+                                            <th>Score</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Function</th>
+                                            <th>Indoor/Outdoors</th>
+                                            <th>Details</th>
+                                            <th>Monday</th>
+                                            <th>Tuesday</th>
+                                            <th>Wednesday</th>
+                                            <th>Thursday</th>
+                                            <th>Friday</th>
+                                            <th>Saturday</th>
+                                            <th>Sunday</th>
+                                            <th>Score</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>경복궁</td>
+                                            <td>고궁</td>
+                                            <td>Outdoor</td>
+                                            <td>서울특별시에 있는 조선시대의 궁궐 중 하나이며, 조선의 정궁이기도 하다. 사적 제117호로 지정되어 있다. 서울특별시 종로구 사직로 161소재. 조선의 법궁이다.</td>
+                                            <td>9AM-6PM</td>
+                                            <td>Closed</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>4.6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>창덕궁</td>
+                                            <td>고궁</td>
+                                            <td>Outdoor</td>
+                                            <td>서울특별시에 있는 조선 - 대한제국시대 궁궐 중 하나. 1997년 유네스코 세계유산으로 등재되었다.</td>
+                                            <td>Closed</td>
+                                            <td>9AM-5PM</td>
+                                            <td>9AM-5PM</td>
+                                            <td>9AM-5PM</td>
+                                            <td>9AM-5PM</td>
+                                            <td>9AM-5PM</td>
+                                            <td>9AM-5PM</td>
+                                            <td>4.6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>북촌 한옥마을</td>
+                                            <td>문화유산보존지역</td>
+                                            <td>Outdoor</td>
+                                            <td>서울특별시 종로구 가회동, 삼청동 내의 한옥 밀집지역을 칭한다.</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-5PM</td>
+                                            <td>9AM-5PM</td>
+                                            <td>4.3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>롯데월드</td>
+                                            <td>놀이공원</td>
+                                            <td>Outdoor</td>
+                                            <td>서울특별시 송파구 올림픽로 240(잠실동)에 위치한 건물로, 테마파크, 백화점, 호텔, 면세점, 대형 할인점이 한 곳에 모여 있는 대단위 복합 생활공간(CLT:Complex Life Town)을 표방하고 있다.</td>
+                                            <td>9:30AM-10PM</td>
+                                            <td>9:30AM-10PM</td>
+                                            <td>9:30AM-10PM</td>
+                                            <td>9:30AM-10PM</td>
+                                            <td>9:30AM-11PM</td>
+                                            <td>9:30AM-11PM</td>
+                                            <td>Closed</td>
+                                            <td>4.2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>청계천</td>
+                                            <td>관광지</td>
+                                            <td>Outdoor</td>
+                                            <td>서울의 한복판인 종로구와 중구와의 경계를 흐르는 하천. 한성(서울)내의 모든 물이 여기에 모여 동쪽으로 흐르다가 왕십리 밖 살곶이다리(현 한양대 서울캠퍼스 인근) 근처에서 중랑천과 합쳐 서쪽으로 흐름을 바꾸어 한강으로 빠진다.</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>4.1</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>덕수궁</td>
+                                            <td>고궁</td>
+                                            <td>Outdoor</td>
+                                            <td>서울특별시 중구 세종대로 99(정동 5-1) 서울특별시청 건너편에 있는 조선 시대에 지어진 궁궐.</td>
+                                            <td>Closed</td>
+                                            <td>9AM-9PM</td>
+                                            <td>9AM-9PM</td>
+                                            <td>9AM-9PM</td>
+                                            <td>9AM-9PM</td>
+                                            <td>9AM-9PM</td>
+                                            <td>9AM-9PM</td>
+                                            <td>4.4</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>광화문</td>
+                                            <td>문화유산보존지역</td>
+                                            <td>Outdoor</td>
+                                            <td>조선 왕조의 정궁인 경복궁의 정문을 가리키는 말. 다만 일반 대중들에겐 정문을 지칭하는 것 외에도 '광화문' 자체가 세종대로, 광화문광장 등을 비롯한 일대를 통칭하는 지명으로 많이 쓰이고 있다. </td>
+                                            <td>8AM-5PM</td>
+                                            <td>8AM-5PM</td>
+                                            <td>8AM-5PM</td>
+                                            <td>8AM-5PM</td>
+                                            <td>8AM-5PM</td>
+                                            <td>8AM-5PM</td>
+                                            <td>8AM-5PM</td>
+                                            <td>4.5</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>숭례문</td>
+                                            <td>문화유산보존지역</td>
+                                            <td>Outdoor</td>
+                                            <td>600년 동안 한양을 둘러싸고 있었던 한양도성의 남쪽에 위치한 문. 현재도 서울시의 중심에 위치하고 있다. 대한민국 국보 1호. 서울의 상징이나 다름 없는 건축물이다.</td>
+                                            <td>Closed</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>4.3</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>창경궁</td>
+                                            <td>고궁</td>
+                                            <td>Outdoor</td>
+                                            <td>조선 시대의 궁궐 중 하나. 일제강점기 및 해방 후 40여 년 동안 '창경원(昌慶苑)'이라는 이름으로 불렸으나 1986년 궁궐 복원에 따라 창경궁으로 환원되었다. 서울특별시 종로구 와룡동에 있다. 조선 시대에는 창덕궁과 연결되어 동궐로 불리면서 실질적으로 하나의 궁궐 역할을 했다.</td>
+                                            <td>Closed</td>
+                                            <td>9AM-5:30PM</td>
+                                            <td>9AM-5:30PM</td>
+                                            <td>9AM-5:30PM</td>
+                                            <td>9AM-5:30PM</td>
+                                            <td>9AM-5:30PM</td>
+                                            <td>9AM-5:30PM</td>
+                                            <td>4.5</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>종묘</td>
+                                            <td>문화유산보존지역</td>
+                                            <td>Outdoor</td>
+                                            <td>조선 시대 역대 왕과 왕비 및 추존된 왕과 왕비의 신주(神主)를 모신 왕실의 유교 사당.  '종묘사직'이란 말에서 알 수 있듯 전제왕조 당시 왕실과 나라를 상징하는 건물 중 하나였다. </td>
+                                            <td>9AM-5:30PM</td>
+                                            <td>Closed</td>
+                                            <td>9AM-5:30PM</td>
+                                            <td>9AM-5:30PM</td>
+                                            <td>9AM-5:30PM</td>
+                                            <td>9AM-5:30PM</td>
+                                            <td>9AM-5:30PM</td>
+                                            <td>4.5</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>광화문 광장</td>
+                                            <td>대광장</td>
+                                            <td>Outdoor</td>
+                                            <td>서울특별시 종로구 광화문에서 세종로사거리와 청계광장으로 이어지는 세종로 중앙에 조성된 광장.</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>4.4</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>흥인지문</td>
+                                            <td>문화유산보존지역</td>
+                                            <td>Outdoor</td>
+                                            <td>보물 제 1호, 서울특별시 종로구 종로6가에 있는 조선시대의 성문.</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>4.1</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>국립중앙박물관</td>
+                                            <td>박물관</td>
+                                            <td>Indoor</td>
+                                            <td>대한민국 최대 규모의 국립 박물관. 국립중앙박물관은 박물관 일반의 사업 외에 다음 각 호의 업무를 수행한다.
+                                    - 국내외 문화재의 보존·관리
+                                    - 국내외 박물관자료의 체계적인 보존·관리
+                                    - 국내 다른 박물관에 대한 지도·지원 및 업무 협조
+                                    - 국내 박물관 협력망의 구성 및 운영
+                                    - 그 밖에 국가를 대표하는 박물관으로서의 기능 수행에 필요한 업무</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-9PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-9PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>4.6</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>전쟁기념박물관</td>
+                                            <td>박물관</td>
+                                            <td>Indoor</td>
+                                            <td>전쟁에 관한 사적과 사건을 기념하기 위해 1991년에 착공하여 1994년 6월 개관한 기념관. 연건평 2만 5천 평에 지하 2층, 지상 4층 규모이며, 호국추모실·전쟁역사실·한국전쟁실·해외파병실·국군발전실·대형장비실 등 6개 전시실로 구분되어 있다.</td>
+                                            <td>Closed</td>
+                                            <td>9:30AM-6PM</td>
+                                            <td>9:30AM-6PM</td>
+                                            <td>9:30AM-6PM</td>
+                                            <td>9:30AM-6PM</td>
+                                            <td>9:30AM-6PM</td>
+                                            <td>9:30AM-6PM</td>
+                                            <td>4.5</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>어린이대공원</td>
+                                            <td>놀이공원</td>
+                                            <td>Outdoor</td>
+                                            <td>서울 광진구에 있는 어린이공원. 가족 단위 휴식공간으로, 공원 출입문은 정문, 동문, 서문, 남문, 북문, 후문, 능동문, 회관문, 구의문 등 9개가 있으며, 주요 시설로 동물나라, 놀이동산, 자연나라 등이 있다. </td>
+                                            <td>5AM-10PM</td>
+                                            <td>5AM-10PM</td>
+                                            <td>5AM-10PM</td>
+                                            <td>5AM-10PM</td>
+                                            <td>5AM-10PM</td>
+                                            <td>5AM-10PM</td>
+                                            <td>5AM-10PM</td>
+                                            <td>4.4</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>경희궁</td>
+                                            <td>고궁</td>
+                                            <td>Outdoor</td>
+                                            <td>조선 후기 동안 정궁인 창덕궁에 이은 제2의 궁궐(이궁)로 양대 궁궐 체제의 한 축을 담당했다. 많은 왕들이 경희궁에서 적지 않은 시간 동안 거처하면서 창덕궁이 지닌 정궁으로서의 기능을 일정 부분 나눠서 수행했다. 조선시대에는 주로 창덕궁+창경궁을 지칭하는 '동궐'에 대비되는 이름인 '서궐'로 불리웠다.</td>
+                                            <td>Closed</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>4.2</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>국립고궁박물관</td>
+                                            <td>박물관</td>
+                                            <td>Indoor</td>
+                                            <td>조선왕실의 문화재 및 궁중 유물을 전시·관리하고 있으며 궁중유물의 홍보 및 사회교육, 학술도서와 자료의 수집, 출판, 관리 업무도 담당한다. 박물관은 지상2층, 지하1층의 규모(연면적 18,284 ㎡)로 전시실(15개실), 수장고, 보존과학실 등의 시설이 있다. 전시실은 제왕기록실, 국가의례실, 궁궐건축실, 과학문화실, 왕실생활실, 탄생교육실, 왕실문예실, 대한제국실, 궁중회화실, 궁중음악실, 어가의장실, 자격루실 등으로 구성되어 궁중 유물을 전시하고 있다.</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-7PM</td>
+                                            <td>9AM-7PM</td>
+                                            <td>4.4</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>서울역사박물관</td>
+                                            <td>박물관</td>
+                                            <td>Indoor</td>
+                                            <td>서울역사박물관은 조선시대부터 현재에 이르기까지의 서울의 역사와 문화를 정리하여 보여주는 서울도시역사박물관입니다. 도시 서울의 역사를 담은 세계에서 유일한 박물관으로 상설전시실, 기획전시실, 기증유물전시실, 교육실, 강당, 뮤지엄샵이 있으며 전통문화체험교실, 아이좋은 박물관 등 대상별 맞춤 교육프로그램과 음악회 등 다양한 문화프로그램을 운영하고 있습니다.</td>
+                                            <td>Closed</td>
+                                            <td>9AM-8PM</td>
+                                            <td>9AM-8PM</td>
+                                            <td>9AM-8PM</td>
+                                            <td>9AM-8PM</td>
+                                            <td>9AM-7PM</td>
+                                            <td>9AM-7PM</td>
+                                            <td>4.4</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>삼성 리움박물관</td>
+                                            <td>미술관</td>
+                                            <td>Indoor</td>
+                                            <td>1965년 삼성문화재단 설립 이후 소중한 문화 유산을 보전하고 대중에게 알리고자 노력해온 삼성미술관은 2004년 서울 한남동에 미술관 건물을 신축하면서 삼성미술관 Leeum을 개관했습니다. 수준 높은 소장품 전시 및 기획전시 개최 등 그간의 괄목할만한 활동과 성과로 지금 리움은 명실공히 한국을 대표하는 미술관으로 성장하였습니다.</td>
+                                            <td>Closed</td>
+                                            <td>10:30AM-6PM</td>
+                                            <td>10:30AM-6PM</td>
+                                            <td>10:30AM-6PM</td>
+                                            <td>10:30AM-6PM</td>
+                                            <td>10:30AM-6PM</td>
+                                            <td>10:30AM-6PM</td>
+                                            <td>4.4</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>도봉산</td>
+                                            <td>산</td>
+                                            <td>Outdoor</td>
+                                            <td>서울특별시 도봉구와 경기도 의정부시, 양주시 장흥면에 걸쳐 있는 해발 740m의 산.</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>4.5</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>운현궁</td>
+                                            <td>고궁</td>
+                                            <td>Outdoor</td>
+                                            <td>서울특별시 종로구에 있는 조선 후기 흥선대원군의 사가.  1977년 11월 22일 사적 제257호로 지정되었다. 흥선대원군의 둘째 아들인 고종(高宗:재위 1863∼1907)이 출생하여 12세에 왕위에 오르기 전까지 성장한 잠저(潛邸)이다. 철종(哲宗:재위 1849∼1863)의 뒤를 이어 고종이 즉위하자 생부(生父) 이하응(李昰應)은 흥선대원군이 되었고, 생모 민씨는 여흥부대부인(驪興府大夫人)의 봉작을 받았다. </td>
+                                            <td>Closed</td>
+                                            <td>9AM-7PM</td>
+                                            <td>9AM-7PM</td>
+                                            <td>9AM-7PM</td>
+                                            <td>9AM-7PM</td>
+                                            <td>9AM-7PM</td>
+                                            <td>9AM-7PM</td>
+                                            <td>4.2</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>남산골한옥마을</td>
+                                            <td>문화유산보존지역</td>
+                                            <td>Outdoor</td>
+                                            <td>서울특별시 중구 필동 일대의 한옥이 보존되어 있는 마을.  1989년 남산골의 제모습 찾기 사업에 의해 조성한 마을로 수도방위사령부 부지를 인수하여, 서울특별시 지정 민속자료 한옥 5개 동을 이전 복원하고 전통정원으로 꾸몄다. 1998년 4월 18일에 개관하였다.</td>
+                                            <td>Closed</td>
+                                            <td>9AM-9PM</td>
+                                            <td>9AM-9PM</td>
+                                            <td>9AM-9PM</td>
+                                            <td>9AM-9PM</td>
+                                            <td>9AM-9PM</td>
+                                            <td>9AM-9PM</td>
+                                            <td>4.2</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>관악산</td>
+                                            <td>산</td>
+                                            <td>Outdoor</td>
+                                            <td>서울특별시 관악구 신림동과 동작구 사당동, 경기도 안양시, 과천시의 경계에 있는 산이다. 높이는 632 m.</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>4.5</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>문례동 예술촌</td>
+                                            <td>관광명소</td>
+                                            <td>Indoor</td>
+                                            <td>서울특별시 영등포구에 위치한 예술관으로, 문래동 예술촌을 방문하면 예술인들의 갤러리와  작업실 및 다양한 벽화와 조형물들 뿐 아니라 철공소에서 열심히 작업하시는 분들도 볼 수 있다.</td>
+                                            <td>9AM-10PM</td>
+                                            <td>9AM-10PM</td>
+                                            <td>9AM-10PM</td>
+                                            <td>9AM-10PM</td>
+                                            <td>9AM-10PM</td>
+                                            <td>9AM-10PM</td>
+                                            <td>9AM-10PM</td>
+                                            <td>4.1</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>롯데월드타워</td>
+                                            <td>관광명소</td>
+                                            <td>Indoor</td>
+                                            <td>대한민국에서 가장 높은 마천루. 서울특별시 송파구 신천동 롯데월드몰에 있는 초고층 빌딩으로 국내 최초로 100층을 넘긴 최고층(지상 123층) 건물이자 새로운 랜드마크다.</td>
+                                            <td>10AM-10PM</td>
+                                            <td>10AM-10PM</td>
+                                            <td>10AM-10PM</td>
+                                            <td>10AM-10PM</td>
+                                            <td>10AM-10PM</td>
+                                            <td>10AM-10PM</td>
+                                            <td>10AM-10PM</td>
+                                            <td>4.3</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>서대문 독립공원</td>
+                                            <td>역사적 명소</td>
+                                            <td>Outdoor</td>
+                                            <td>일제강점기에 의병투쟁, 3·1독립만세운동, 항일투쟁 등으로 투옥되어 옥고를 치르다 순국한 선열들을 기리기 위하여 조성되었다. 이곳의 옥사는 1908년 일제가 침략을 본격화하기 위하여 지은 근대식 감옥으로, 경성감옥이라는 명칭으로 문을 열었는데 항일투사들이 늘어나자 일제가 마포구 공덕동에 새로 감옥을 지어 1912년에 서대문감옥으로 명칭을 바꾸었다. 그후 1923년에는 서대문형무소로, 1946년에는 경성형무소로, 1950년에는 서울형무소로 바뀌었고 1961년에는 서울교도소로 개칭되었다가 1967년 7월에 서울구치소로 바뀌는 등 여러 차례 그 명칭이 바뀌었다.</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>4.5</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>서대문 자연사박물관</td>
+                                            <td>박물관</td>
+                                            <td>Indoor</td>
+                                            <td>대지면적 1만 174㎡, 연면적 6,959㎡에 지하 1층 지상 3층 규모로, 3개 주제관 및 부속시설로 이루어지며 수장고·교육실·연구실·표본제작실·훈증실·항온항습기실 등 부대시설이 있다. 1층에는 인간과 자연관·기획전시실·카페테리아·뮤지엄숍·시청각실·가상체험실이 자리잡고 있고, 2층에는 생명진화관·자료실, 3층에는 지구환경관·돌마당·나무마당이 있다. 전시물은 역사적인 흐름에 맞추어 시간적·공간적 순서에 따라 입체적인 디오라마(diorama) 형식으로 전시하며, 전시물 외에 동영상을 제공하고 여러 체험프로그램을 개발·운영한다. </td>
+                                            <td>Closed</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>4.2</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>국립현대미술관 서울관</td>
+                                            <td>미술관</td>
+                                            <td>Indoor</td>
+                                            <td>종로구 소격동에 위치한 국립현대미술관 서울관은 기무사 터와 기타 조선왕조 종친부 부지를 포함에서 크고 아름다우면서도 도심에 위치하게 지었다. 무형의 미술관, 군도형 미술관, 열린 미술관의 세가지 주제로 설계되었다.</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-9PM</td>
+                                            <td>10AM-9PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>4.4</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>대림미술관</td>
+                                            <td>미술관</td>
+                                            <td>Indoor</td>
+                                            <td>종로구 동의동에 위치한 대림미술관은 한국 최초의 사진 전문 미술관으로 출발하여 현재에는 사진뿐만 아니라 디자인을 포함한 다양한 분야의 전시를 소개하며 그 경계를 확장해 나가고 있다.우리 주변에서 쉽게 발견 할 수 있는 사물의 가치를 새롭게 조명함으로써 대중들이 일상 속에서 예술을 즐길 수 있도록 새로운 라이프 스타일을 제안하는 전시 컨텐츠를 연구하고 있다.</td>
+                                            <td>Closed</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-8PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-8PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>4.2</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>삼성리움미술관</td>
+                                            <td>미술관</td>
+                                            <td>Indoor</td>
+                                            <td>용산구 한남동에 위치한 삼성리움미술관은 삼성문화재단에서 만든 사립 미술관이다. 컬렉션 만큼은 한국 전통 미술과 현대 미술 양 쪽 모두에서 한국 정상급인 미술관임을 부인할 수 없다. 특히 한국 전통 미술에 관해서 리움과 비교될만한 사립 미술관은 간송미술관 정도 밖에 없다.</td>
+                                            <td>Closed</td>
+                                            <td>10:30AM-6PM</td>
+                                            <td>10:30AM-6PM</td>
+                                            <td>10:30AM-6PM</td>
+                                            <td>10:30AM-6PM</td>
+                                            <td>10:30AM-6PM</td>
+                                            <td>10:30AM-6PM</td>
+                                            <td>4.4</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>D Museum</td>
+                                            <td>미술관</td>
+                                            <td>Indoor</td>
+                                            <td>용산구 한남동에 위치한 D Museum은 전시실 2개의 층으로 구성되어 있다. 전시실 이외에는 국내외 아티스트의 콜라보레이션 상품을 소개하는 뮤지엄샵, 미술관내 전용 카페인 'D카페', 200명 이상을 수용할 수 있는 4층의 다목적홀 스튜디오, 지하주차장으로 구성되어 있다.</td>
+                                            <td>Closed</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-8PM</td>
+                                            <td>10AM-8PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>4.1</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>소마미술관</td>
+                                            <td>미술관</td>
+                                            <td>Indoor</td>
+                                            <td>송파구 방이동에 위치한 소마미술관은 국민체육진흥공단이 국민의 예술적 정서함양을 위하여 2004년 9월 개관한 대중지향적 문화예술공간이다. 2006년 국내 최초로 소마드로잉센터를 개관하여 드로잉 분야에 있어 독창적인 색깔을 추구하고 있다.</td>
+                                            <td>Closed</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>4.0</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>국립현대미술관 덕수궁관</td>
+                                            <td>미술관</td>
+                                            <td>Indoor</td>
+                                            <td>중구 세종대로에 위치한 국립현대미술관 덕수궁관은 1998년 덕수궁 내 분관으로 개관하였다.석조전의 동관과 서관으로 둘러싸인 직각의 공간 안에는 청동 분수대를 갖춘 정원이 자리한다. 우리나라 최초의 서양식 정원으로 지금도 분수대로서의 역할을 다하고 있다.</td>
+                                            <td>Closed</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-9PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-9PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>4.4</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>서울시립미술관 서소문본관</td>
+                                            <td>미술관</td>
+                                            <td>Indoor</td>
+                                            <td>중구 서소문동에 위치한 서울시립미술관 서소문 본관은 르네상스 양식과 현대식 건물의 결합으로 미술관 건물 자체의 건축미가 두드러진다. 샤갈, 피카소, 마티스, 마그리트, 고흐 등 미술에 문외한인 사람도 익히 알 만한 세계 유명 화가들의 전시회는 물론 국제미디어아트비엔날레, 미술관 봄나들이전 등 특색 있는 기획 전시를 선보인다.</td>
+                                            <td>Closed</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>4.3</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>아르코미술관</td>
+                                            <td>미술관</td>
+                                            <td>Indoor</td>
+                                            <td>종로구 이화동에 위차한 아크로미술관은 한국의 동시대 예술작품과 이에 관한 담론의 생산처로서 장르나 매체간의 통섭적 사유를 구현하기 위한 실험적인 기획전과 이를 대중들과 소통할 수 있는 다양한 교육프로그램, 국제교류 네트워크를 활용한 다양한 협업 프로그램을 운영하고 있다.</td>
+                                            <td>Closed</td>
+                                            <td>11:00AM-6PM</td>
+                                            <td>11:00AM-6PM</td>
+                                            <td>11:00AM-6PM</td>
+                                            <td>11:00AM-6PM</td>
+                                            <td>11:00AM-6PM</td>
+                                            <td>11:00AM-6PM</td>
+                                            <td>4.4</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>서울시립미술관 경희궁미술관</td>
+                                            <td>미술관</td>
+                                            <td>Indoor</td>
+                                            <td>종로구 사직동에 위치한 서울시립미술관의 경희궁분관으로 10미터가 넘는 높은 천장, 내부 구조를 그대로 드러내는 철재 구조물들, 유동적 동선을 보여주는 굴곡진 내부구조와 원형식의 복도 등의 외형적 특징이 인상적이다.</td>
+                                            <td>10AM-8PM</td>
+                                            <td>10AM-8PM</td>
+                                            <td>10AM-8PM</td>
+                                            <td>10AM-8PM</td>
+                                            <td>10AM-8PM</td>
+                                            <td>10AM-8PM</td>
+                                            <td>10AM-8PM</td>
+                                            <td>3.0</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>포스코미술관</td>
+                                            <td>미술관</td>
+                                            <td>Indoor</td>
+                                            <td>강남구 대치동에 위치한 포스코미술관은 1995년 개관한 이래 예술을 매개로 사람과 사람, 사람과 사회간의 자유로운 소통이 가능한 "열린 문화 공간, 문턱 낮은 미술관"을 지향해 오고 있다. 다양한 현대미술 기획전시와 아카데미 프로그램을 통해 "예술 속의 생활, 생활 속의 예술" 실천하고 있다.</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>12AM-5PM</td>
+                                            <td>Closed</td>
+                                            <td>3.9</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>K현대미술관</td>
+                                            <td>미술관</td>
+                                            <td>Indoor</td>
+                                            <td>강남구 압구정동에 위치한 K현대미술관은 세계적인 예술작품을 소장하고 전시하며 관객과 소통하는 현대미술관 이다. 국내 유일의 야간개장 미술관이기도 하며, 몇몇 작품은 만져볼수도 있어서 긴장감도 좀 내려놓고 편하게 관람할 수 있다.</td>
+                                            <td>Closed</td>
+                                            <td>10AM-8PM</td>
+                                            <td>10AM-8PM</td>
+                                            <td>10AM-8PM</td>
+                                            <td>10AM-8PM</td>
+                                            <td>10AM-8PM</td>
+                                            <td>10AM-6:30PM</td>
+                                            <td>3.9</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>간송미술관</td>
+                                            <td>미술관</td>
+                                            <td>Indoor</td>
+                                            <td>송북구 성북동에 위치한 간송미술관은  대한민국 최초의 근대식 사립박물관이다. 1938년 간송 전형필 선생이 설립한 보화각이 전신으로, 1966년 간송미술관과 한국민족미술연구소 체제로 변경되었다. 12점의 국보와 10점의 보물, 그리고 서울특별시 유형문화재 4점 등 수천여점의 문화재를 소장하고 있다.</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>4.0</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>서울미술관</td>
+                                            <td>미술관</td>
+                                            <td>Indoor</td>
+                                            <td>종로구 부암동에 위치한 서울미술관은 감상자가 창조자가 되는 미술관을 지향한다. 감상자가 미술관과 전문가들의 권위에 눌려 주어진 정보를 수동적으로 수용하는 미술관이 아니라, 스스로 감상의 주체가 되어 창조적으로 감상하는 미술관을 모토로 운영되고 있다.</td>
+                                            <td>Closed</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>4.1</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>국립현대미술관</td>
+                                            <td>미술관</td>
+                                            <td>Indoor</td>
+                                            <td>경기도 과천시 문원동에 위치한 국립현대미술관은 미술작품 및 자료의 수집·보존·전시·조사 및 연구와 이에 관한 국제교류 및 미술활동의 보급을 통한 국민의 미술문화의식 향상에 관한 사무를 관장하고 있다.</td>
+                                            <td>Closed</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-9PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>4.3</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>일민미술관</td>
+                                            <td>미술관</td>
+                                            <td>Indoor</td>
+                                            <td>일민미술관은 종로구 세종로에 위치한 미술관이다. 김상만의 업적을 기리기 위해 설립되었다. 시대와 삶에 새겨진 일상의 미적 가치를 탐구하여 예술과 대중 간의 유기적 소통을 확장의 의도로 운영되고 있다.</td>
+                                            <td>Closed</td>
+                                            <td>11:00AM-7PM</td>
+                                            <td>11:00AM-7PM</td>
+                                            <td>11:00AM-7PM</td>
+                                            <td>11:00AM-7PM</td>
+                                            <td>11:00AM-7PM</td>
+                                            <td>11:00AM-7PM</td>
+                                            <td>3.9</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>국립현대미술관 창동레지던시</td>
+                                            <td>미술관</td>
+                                            <td>Indoor</td>
+                                            <td>도봉구 창2동에 위치한 국립현대미술관 창동레지던시는 미술작가들의 창작 여건 활성화와 한국 현대미술의 국제화를 위해 국립현대미술관이 운영하는 레지던시이다.</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>4.0</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>한미사진미술관</td>
+                                            <td>미술관</td>
+                                            <td>Indoor</td>
+                                            <td>송파구 방이동에 위치한 한미사진미술관은 2004년 국내 최초로 개관한 사진 전문 미술관이다. 사진에 대한 애정만으로 힘겨운 사진가의 길을 마다하지 않는 작가들의 창작 의욕을 북돋워 작품 활동을 적극 장려할 수 있는 분위기를 형성시키기에 일조하고 있다.</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>Closed</td>
+                                            <td>4.2</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>성곡미술관</td>
+                                            <td>미술관</td>
+                                            <td>Indoor</td>
+                                            <td>종로구 사직동에 위치한 성곡미술관은  성곡미술문화재단에 운영하고 있다. 소규모의 알찬 전시들이 자주 열리고 특별 전시외에도 조각공원이 꾸며져 있어 둘러보기 좋다.</td>
+                                            <td>Closed</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>4.1</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>성북구립미술관</td>
+                                            <td>미술관</td>
+                                            <td>Indoor</td>
+                                            <td>성북구 성북동에 위치한 성북구립미술관은 서울시 최초의 자치구 미술관으로 예술적 내향이 깃든 고즈넉한 작품들이 전시되어 있다.</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>10AM-6PM</td>
+                                            <td>nan</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>예술의전당 한가람미술관</td>
+                                            <td>미술관</td>
+                                            <td>Indoor</td>
+                                            <td>서초구 서초 3동에 위치한 예술의 전당 내부에 자리잡고 있는 한가람미술관은 본관 전체 3층 중 1층 3개 전시실으로 운영되고 있다. 기획전을 상시 하는 곳으로 유명하다.</td>
+                                            <td>11:00AM-8PM</td>
+                                            <td>11:00AM-8PM</td>
+                                            <td>11:00AM-8PM</td>
+                                            <td>11:00AM-8PM</td>
+                                            <td>11:00AM-8PM</td>
+                                            <td>11:00AM-8PM</td>
+                                            <td>11:00AM-8PM</td>
+                                            <td>4.3</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>유강원(순명효황후의 릉)문화유적</td>
+                                            <td>역사적 명소</td>
+                                            <td>Outdoor</td>
+                                            <td>광진구 능동에 위치한 유강원은 대한제국 순종의 비 순명효황후의 옛 무덤이다. 옛 유강원 터인 광진구 어린이대공원에 남아 있다. 2001년 서울특별시의 유형문화재 제 134호로 지정되었다.</td>
+                                            <td>5AM-10PM</td>
+                                            <td>5AM-10PM</td>
+                                            <td>5AM-10PM</td>
+                                            <td>5AM-10PM</td>
+                                            <td>5AM-10PM</td>
+                                            <td>5AM-10PM</td>
+                                            <td>5AM-10PM</td>
+                                            <td>2.0</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>살곶이다리</td>
+                                            <td>역사적 명소</td>
+                                            <td>Outdoor</td>
+                                            <td>성동구 행당1동에 위치한 살곶이다리는  조선의 수도인 한성부와 한반도 남동부를 잇는 주요 교통로에 세워진 다리로 강릉·충주 지방을 연결하는 주요 통로였다. 현존하는 조신 시대 돌다리 중 가장 길다는 특징이 있다.</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>4.0</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>아차산성</td>
+                                            <td>역사적 명소</td>
+                                            <td>Outdoor</td>
+                                            <td>광진구 광장동 한강 북쪽에 위치하고 있는 아차산성은 사적 제 234호로 지정된 문화재이다. 백제가 하남위례성에 도읍하였을 때 고구려의 침입을 물리치기 위하여 쌓은 큰 성이다.</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>4.2</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>광화문</td>
+                                            <td>역사적 명소</td>
+                                            <td>Outdoor</td>
+                                            <td>종로구에 위치한 경복궁의 남쪽에 있는 정문이다. 패의 뜻은 '임금의 큰 덕이 온 나라를 비춘다'이다.1395년에 세워졌으며, 2층 누각인 광화문 앞의 양쪽에는 한 쌍의 해치 조각상이 자리잡고 있다. 광화문의 석축부에는 세 개의 홍례문이 있다. 가운데 문은 임금이 다니는 문이고, 나머지 좌우의 문은 신하들이 다니던 문이었다.</td>
+                                            <td>8AM-5PM</td>
+                                            <td>8AM-5PM</td>
+                                            <td>8AM-5PM</td>
+                                            <td>8AM-5PM</td>
+                                            <td>8AM-5PM</td>
+                                            <td>8AM-5PM</td>
+                                            <td>8AM-5PM</td>
+                                            <td>4.5</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>풍납토성</td>
+                                            <td>역사적 명소</td>
+                                            <td>Outdoor</td>
+                                            <td>광진구 광장동의 산속에 위치한 아차산성은 사적 제 234호로 지정된 문화재이다. 백제가 하남 위례성에 도읍하였을 때 고구려의 침입을 물리치기 위하여 쌓은 큰 성이다.</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>3.8</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>장충단비</td>
+                                            <td>역사적 명소</td>
+                                            <td>Outdoor</td>
+                                            <td>중구 장충동에 있는 장춘단비는 대한제국 시대에 만들어진 장충단에 서 있던 비석이다. 1969년 서울특별시의 유형문화재 제1호로 지정되었다.</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>nan</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>숭례문</td>
+                                            <td>역사적 명소</td>
+                                            <td>Outdoor</td>
+                                            <td>중구에 위치한 숭례문은 남대문이라고 불리기도 한다. 2008년 방화로 인하여 소실된 나쁜 기억이 있지만, 2013년 4월 소실된 숭례문을 원형에 가깝게 복원하였다.</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>4.3</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>광평대군묘</td>
+                                            <td>역사적 명소</td>
+                                            <td>Outdoor</td>
+                                            <td>강남구 일원동에 위치한 광평대군묘는 세종대왕과 소헌왕후 심씨의 다섯째 아들의 분묘이다.</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>3.4</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>아차산4보루</td>
+                                            <td>역사적 명소</td>
+                                            <td>Outdoor</td>
+                                            <td>광진구, 구리시 중첩에 위치하고 있으며 5세기 중반경 장수왕이 조성한것으로 알려져 있다. 철기제작 및 수리시설이 발견되었으며, 고구려편제 실마리를 제공하는 유적으로도 확인되고 있다.</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>3.0</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>서울문묘</td>
+                                            <td>역사적 명소</td>
+                                            <td>Outdoor</td>
+                                            <td>온돌이 발견되어 한민족 주거문화에 대해서도 알 수 있는 중요유적입니다.</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>4.8</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>동대문</td>
+                                            <td>역사적 명소</td>
+                                            <td>Outdoor</td>
+                                            <td>종로구에 위치한 흥인지문이라고도 불리는 동대문은 한양의 4대문 중의 하나로 대한민국의 보물 제 1호로 지정되어 있다. 도성의 8개 성문 중 유일하게 옹성을 갖추고 있다는 특징이 있다.</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>4.1</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>우정총국</td>
+                                            <td>역사적 명소</td>
+                                            <td>Outdoor</td>
+                                            <td>종로구 우정국로에 위치한 우정총국은 조선시대 후기 우체업무를 담당하던 관청으로 한국 역사상 최초의 우체국이라고 할 수 있다. 건물은 사적 제213호로 지정되어 있다.</td>
+                                            <td>9AM-5PM</td>
+                                            <td>9AM-5PM</td>
+                                            <td>9AM-5PM</td>
+                                            <td>9AM-5PM</td>
+                                            <td>9AM-5PM</td>
+                                            <td>9AM-5PM</td>
+                                            <td>9AM-5PM</td>
+                                            <td>4.0</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>광통교</td>
+                                            <td>역사적 명소</td>
+                                            <td>Outdoor</td>
+                                            <td>청계천에 설치되어 있는 다리로 지금의 광교 자리에 있었으며, 육조거리에서 숭례문으로 이어지는 도성 안 중심통로여서 옛 도성에서 가장 많은 사람들이 왕래하던 다리였다고 한다.</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>4.6</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>월계동각심재</td>
+                                            <td>역사적 명소</td>
+                                            <td>Outdoor</td>
+                                            <td>청계천에 설치되어 있는 다리로 지금의 광교 자리에 있었으며, 육조거리에서 숭례문으로 이어지는 도성 안 중심통로여서 옛 도성에서 가장 많은 사람들이 왕래하던 다리였다고 한다.</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>3.0</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>목릉</td>
+                                            <td>역사적 명소</td>
+                                            <td>Outdoor</td>
+                                            <td>종로구 경운동에 위치한 월계동 각심재는 1930년대에 지은것으로 보이는 개량한옥으로 경운동에 있던것을 지금의 장소로 옮겨 지었다고 한다.일제시기의 개량한옥의 모습을 잘 나타내고 있으며 주택의 변천사를 알 수 있는 중요한 자료이다.</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>Open 24 hours</td>
+                                            <td>4.0</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>서울어린이대공원놀이동산</td>
+                                            <td>놀이공원</td>
+                                            <td>Outdoor</td>
+                                            <td>광진구 능동에 위치한 어린이 대공원 내의 놀이동산으로 어린이 대공원의 취지에 맞추어 유모차 관련 시설이나 수유 시설등이 매우 잘 되어있다.</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>10AM-9PM</td>
+                                            <td>10AM-7PM</td>
+                                            <td>4.3</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>어린이대공원</td>
+                                            <td>놀이공원</td>
+                                            <td>Outdoor</td>
+                                            <td>광진구 능동에 있는 시립 공원으로 현재 서울시설공단에서 운영하고 있다. 개장 당시에는 동양 최대의 규모였다. 푸른 숲과 파란 잔디의 녹지공간으로 이루어져 있어 어린이는 물론 청소년과 일반시민을 위한 휴식 및 문화공간으로서 시민공원의 역할을 한다. 또한 각종 교양시설 및 동물원, 식물원, 놀이시설 등을 갖춘 학습교육장으로 기능하고 있다.</td>
+                                            <td>5AM-10PM</td>
+                                            <td>5AM-10PM</td>
+                                            <td>5AM-10PM</td>
+                                            <td>5AM-10PM</td>
+                                            <td>5AM-10PM</td>
+                                            <td>5AM-10PM</td>
+                                            <td>5AM-10PM</td>
+                                            <td>4.4</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>문래공원관리사무소</td>
+                                            <td>놀이공원</td>
+                                            <td>Outdoor</td>
+                                            <td>영등포구 문래동에 위치한 문래공원은 많은 식목들이 심어져 있는 생태공원으로 생태연못, 배드민턴장, 산책로, 야외헬스기구와 같은 야외시설들이 설치되어 있다.</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>9AM-6PM</td>
+                                            <td>Closed</td>
+                                            <td>Closed</td>
+                                            <td>nan</td>
+                                        </tr>
+                                        
+                                    
+                                        <tr>
+                                            <td>테지움 서울</td>
+                                            <td>놀이공원</td>
+                                            <td>Indoor</td>
+                                            <td>종로구 창신 1동에 위치한 테지움 서울은 테디베어 테마파크로 테디베어를 직접 만지고 안아보는 오픈형 이색체험전시 공간이다. 이곳에서 테디베어의 어원과 유래, 역사를 알 수 있다. 서울 테마 존에서는 옛 시절 서울부터 현재 서울까지를 테디베어로 소개하고 있다.</td>
+                                            <td>8:30AM-6PM</td>
+                                            <td>8:30AM-6PM</td>
+                                            <td>8:30AM-6PM</td>
+                                            <td>8:30AM-6PM</td>
+                                            <td>8:30AM-6PM</td>
+                                            <td>8:30AM-6PM</td>
+                                            <td>8:30AM-6PM</td>
+                                            <td>4.1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="static/js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="static/js/datatables-simple-demo.js"></script>
+    </body>
+</html>
