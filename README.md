@@ -14,7 +14,7 @@ Tools:
 * Selenium: A tool for automating web browsers to collect data from dynamic web pages.
 * Chrome WebDriver: Used with Selenium to automate the Google Chrome browser.
 
-![Review Capture](https://github.com/LEEJAEYONG-97/portfolio/raw/main/app/static/assets/img/리뷰%20캡처.png)
+![Review Capture](app/static/assets/img/리뷰 캡처.png)
 
 
 # League Statistics
